@@ -14,6 +14,7 @@ public class QuizManager : MonoBehaviour
     public TMP_Text[] answerTexts;
     public TMP_Text scoreText;
     public TMP_Text timerText;
+    public TMP_Text highScoreText;
     public Button nextButton;
     public Button exitButton;
 
@@ -21,6 +22,7 @@ public class QuizManager : MonoBehaviour
     public List<QuestionData> questions;
     private QuestionData currentQuestion;
     private int score = 0;
+    private int highScore = 0;
     private List<int> questionIndices;
     private int questionIndex = 0;
 
@@ -36,6 +38,7 @@ public class QuizManager : MonoBehaviour
 
     void Start()
     {
+        LoadHighScore();
         ShuffleQuestions();
         LoadNextQuestion();
     }
@@ -147,6 +150,23 @@ public class QuizManager : MonoBehaviour
             txt.gameObject.SetActive(false);
         }
         nextButton.gameObject.SetActive(false);
+        SaveHighScore();
+    }
+
+    void LoadHighScore()
+    {
+        highScore = PlayerPrefs.GetInt("HighScore", 0);
+        highScoreText.text = "High Score: " + highScore;
+    }
+
+    void SaveHighScore()
+    {
+        if (score > highScore)
+        {
+            highScore = score;
+            PlayerPrefs.SetInt("HighScore", highScore);
+            PlayerPrefs.Save();
+        }
     }
 }
 
