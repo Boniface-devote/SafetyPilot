@@ -4,6 +4,7 @@ using TMPro;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using DG.Tweening; // Import DOTween for animations
 
 public class QuizManager : MonoBehaviour
 {
@@ -35,6 +36,12 @@ public class QuizManager : MonoBehaviour
     public Color correctColor = Color.green;
     public Color incorrectColor = Color.red;
     public Color defaultColor = Color.white;
+
+    [Header("Sound Effects")]
+    public AudioSource audioSource;
+    public AudioClip correctSound;
+    public AudioClip incorrectSound;
+    public AudioClip buttonClickSound;
 
     void Start()
     {
@@ -78,13 +85,16 @@ public class QuizManager : MonoBehaviour
             questionText.text = currentQuestion.question;
             questionImage.sprite = currentQuestion.questionSprite;
 
+            questionText.DOFade(0, 0f).OnComplete(() => questionText.DOFade(1, 0.5f)); // Fade-in effect
+            questionImage.transform.DOPunchScale(Vector3.one * 0.1f, 0.3f); // Small bounce effect
+
             for (int i = 0; i < answerButtons.Length; i++)
             {
                 answerTexts[i].text = currentQuestion.answers[i];
                 answerButtons[i].onClick.RemoveAllListeners();
                 int index = i;
                 answerButtons[i].onClick.AddListener(() => CheckAnswer(index));
-                answerButtons[i].GetComponent<Image>().color = defaultColor; // Reset button color
+                answerButtons[i].GetComponent<Image>().color = defaultColor;
             }
 
             timer = timePerQuestion;
@@ -104,11 +114,15 @@ public class QuizManager : MonoBehaviour
         {
             score++;
             answerButtons[selectedIndex].GetComponent<Image>().color = correctColor;
+            answerButtons[selectedIndex].transform.DOScale(1.2f, 0.2f).OnComplete(() => answerButtons[selectedIndex].transform.DOScale(1f, 0.2f));
+            audioSource.PlayOneShot(correctSound);
         }
         else
         {
             answerButtons[selectedIndex].GetComponent<Image>().color = incorrectColor;
             HighlightCorrectAnswer();
+            answerButtons[selectedIndex].transform.DOShakePosition(0.3f, 5f, 10, 90, false, true);
+            audioSource.PlayOneShot(incorrectSound);
         }
 
         scoreText.text = "Score: " + score;
@@ -118,6 +132,7 @@ public class QuizManager : MonoBehaviour
     void HighlightCorrectAnswer()
     {
         answerButtons[currentQuestion.correctAnswerIndex].GetComponent<Image>().color = correctColor;
+        answerButtons[currentQuestion.correctAnswerIndex].transform.DOScale(1.2f, 0.2f).OnComplete(() => answerButtons[currentQuestion.correctAnswerIndex].transform.DOScale(1f, 0.2f));
     }
 
     IEnumerator NextQuestionAfterDelay()
@@ -130,11 +145,13 @@ public class QuizManager : MonoBehaviour
     {
         nextButton.gameObject.SetActive(false);
         LoadNextQuestion();
+        audioSource.PlayOneShot(buttonClickSound);
     }
 
     public void ExitQuiz()
     {
         SceneManager.LoadScene("SampleScene");
+        audioSource.PlayOneShot(buttonClickSound);
     }
 
     void EndQuiz()
