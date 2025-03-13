@@ -1,0 +1,157 @@
+using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+using System.Net.Http;
+using System.Threading.Tasks;
+using Newtonsoft.Json;
+
+public class QuizManager : MonoBehaviour
+{
+    [Header("UI Elements")]
+    public TMP_Text questionText;
+    public Image questionImage;
+    public Button[] answerButtons;
+    public TMP_Text[] answerTexts;
+    public TMP_Text scoreText;
+    public TMP_Text correctAnswerText;
+    public Button nextButton;
+
+    [Header("Quiz Data")]
+    private QuestionData currentQuestion;
+    private int score = 0;
+    private HttpClient client = new HttpClient();
+    private string apiKey = "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";
+    private string apiUrl = "https://api.groq.com/openai/v1/chat/completions";
+
+    void Start()
+    {
+        nextButton.onClick.AddListener(OnNextButtonClicked);
+        GenerateNewQuestion();
+    }
+
+    void OnNextButtonClicked()
+    {
+        nextButton.gameObject.SetActive(false);
+        correctAnswerText.text = "";
+        FetchAIQuestion("Generate another different quiz question about the traffic rules and regulations in Uganda. Generate the question, options, and answer only.");
+        Debug.Log("another");
+    }
+
+    void GenerateNewQuestion()
+    {
+        nextButton.gameObject.SetActive(false);
+        correctAnswerText.text = "";
+        FetchAIQuestion("Generate for me a quiz question about the traffic rules and regulations in Uganda. Generate the question, options, and answer only.");
+    }
+
+    async void FetchAIQuestion(string prompt)
+    {
+        var requestData = new
+        {
+            model = "llama-3.3-70b-versatile",
+            messages = new[]
+            {
+                new { role = "user", content = prompt }
+            }
+        };
+
+        string jsonRequest = JsonConvert.SerializeObject(requestData);
+        var content = new StringContent(jsonRequest, System.Text.Encoding.UTF8, "application/json");
+        client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", apiKey);
+
+        HttpResponseMessage response = await client.PostAsync(apiUrl, content);
+        if (response.IsSuccessStatusCode)
+        {
+            string jsonResponse = await response.Content.ReadAsStringAsync();
+            Debug.Log("AI Response: " + jsonResponse);
+            AIResponse aiResponse = JsonConvert.DeserializeObject<AIResponse>(jsonResponse);
+            ParseAIResponse(aiResponse);
+        }
+        else
+        {
+            questionText.text = "Failed to load question. Please try again.";
+        }
+    }
+
+    void ParseAIResponse(AIResponse aiResponse)
+    {
+        string[] parts = aiResponse.choices[0].message.content.Split('\n');
+        if (parts.Length >= 6)
+        {
+            currentQuestion = new QuestionData
+            {
+                question = parts[0],
+                answers = new string[] { parts[1], parts[2], parts[3], parts[4] },
+                correctAnswer = parts[6].Trim(),
+            };
+            DisplayQuestion();
+        }
+    }
+
+    void DisplayQuestion()
+    {
+        questionText.text = currentQuestion.question;
+        for (int i = 0; i < answerButtons.Length; i++)
+        {
+            answerTexts[i].text = currentQuestion.answers[i];
+            answerButtons[i].onClick.RemoveAllListeners();
+            int index = i;
+            answerButtons[i].onClick.AddListener(() => CheckAnswer(index));
+        }
+    }
+
+    void CheckAnswer(int selectedIndex)
+    {
+        string selectedAnswer = answerTexts[selectedIndex].text.Trim();
+        string real = currentQuestion.correctAnswer.Trim();
+
+        int selectedAnswerIndex = selectedAnswer.IndexOf(')');
+        int realIndex = real.IndexOf(')');
+
+        if (selectedAnswerIndex != -1)
+        {
+            selectedAnswer = selectedAnswer.Substring(selectedAnswerIndex + 1).Trim();
+        }
+
+        if (realIndex != -1)
+        {
+            real = real.Substring(realIndex + 1).Trim();
+        }
+
+        if (selectedAnswer.Equals(real))
+        {
+            score++;
+        }
+
+        scoreText.text = "Score: " + score;
+        correctAnswerText.text = "Correct Answer: " + currentQuestion.correctAnswer;
+        nextButton.gameObject.SetActive(true);
+    }
+}
+
+[System.Serializable]
+public class QuestionData
+{
+    public string question;
+    public string[] answers;
+    public string correctAnswer;
+    public int correctAnswerIndex;
+}
+
+[System.Serializable]
+public class AIResponse
+{
+    public Choice[] choices;
+}
+
+[System.Serializable]
+public class Choice
+{
+    public Message message;
+}
+
+[System.Serializable]
+public class Message
+{
+    public string content;
+}
