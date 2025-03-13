@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class QuizManager : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class QuizManager : MonoBehaviour
     public Button[] answerButtons;
     public TMP_Text[] answerTexts;
     public TMP_Text scoreText;
+    public TMP_Text timerText;
     public Button nextButton;
     public Button exitButton;
 
@@ -22,10 +24,37 @@ public class QuizManager : MonoBehaviour
     private List<int> questionIndices;
     private int questionIndex = 0;
 
+    [Header("Timer Settings")]
+    public float timePerQuestion = 10f;
+    private float timer;
+    private bool isTimerRunning = false;
+
+    [Header("Feedback Colors")]
+    public Color correctColor = Color.green;
+    public Color incorrectColor = Color.red;
+    public Color defaultColor = Color.white;
+
     void Start()
     {
         ShuffleQuestions();
         LoadNextQuestion();
+    }
+
+    void Update()
+    {
+        if (isTimerRunning)
+        {
+            timer -= Time.deltaTime;
+            timerText.text = "Time: " + Mathf.Ceil(timer).ToString();
+
+            if (timer <= 0)
+            {
+                isTimerRunning = false;
+                timerText.text = "Time's Up!";
+                HighlightCorrectAnswer();
+                StartCoroutine(NextQuestionAfterDelay());
+            }
+        }
     }
 
     void ShuffleQuestions()
@@ -52,8 +81,11 @@ public class QuizManager : MonoBehaviour
                 answerButtons[i].onClick.RemoveAllListeners();
                 int index = i;
                 answerButtons[i].onClick.AddListener(() => CheckAnswer(index));
+                answerButtons[i].GetComponent<Image>().color = defaultColor; // Reset button color
             }
 
+            timer = timePerQuestion;
+            isTimerRunning = true;
             questionIndex++;
         }
         else
@@ -64,13 +96,31 @@ public class QuizManager : MonoBehaviour
 
     void CheckAnswer(int selectedIndex)
     {
+        isTimerRunning = false;
         if (selectedIndex == currentQuestion.correctAnswerIndex)
         {
             score++;
+            answerButtons[selectedIndex].GetComponent<Image>().color = correctColor;
+        }
+        else
+        {
+            answerButtons[selectedIndex].GetComponent<Image>().color = incorrectColor;
+            HighlightCorrectAnswer();
         }
 
         scoreText.text = "Score: " + score;
-        nextButton.gameObject.SetActive(true);
+        StartCoroutine(NextQuestionAfterDelay());
+    }
+
+    void HighlightCorrectAnswer()
+    {
+        answerButtons[currentQuestion.correctAnswerIndex].GetComponent<Image>().color = correctColor;
+    }
+
+    IEnumerator NextQuestionAfterDelay()
+    {
+        yield return new WaitForSeconds(2f);
+        OnNextButton();
     }
 
     public void OnNextButton()
@@ -97,10 +147,6 @@ public class QuizManager : MonoBehaviour
             txt.gameObject.SetActive(false);
         }
         nextButton.gameObject.SetActive(false);
-
-        //exitButton.gameObject.SetActive(true);
-
-
     }
 }
 

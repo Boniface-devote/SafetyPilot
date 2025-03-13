@@ -952,6 +952,129 @@ MonoBehaviour:
     - Parking is allowed for disabled drivers.
     - Parking is prohibited in this area.
     correctAnswerIndex: 3
+  - question: You are driving in Kampala and see the traffic sign in the image. What
+      does this sign indicate?
+    questionSprite: {fileID: 21300000, guid: df93ab784d5a5224faaff85c94440ddc, type: 3}
+    answers:
+    - You can make a U-turn at this location if it's safe.
+    - You are allowed to make a U-turn during off-peak hours only.
+    - Making a U-turn is strictly prohibited at this location.
+    - You can make a U-turn if you yield to oncoming traffic.
+    correctAnswerIndex: 2
+  - question: While driving on a road in Uganda, you see this traffic sign. What
+      does this sign warn you about?
+    questionSprite: {fileID: 21300000, guid: 49218cc2838b25842bc5319026ab2c90, type: 3}
+    answers:
+    - ' A roundabout is approaching from the left.'
+    - A narrow bridge is ahead on the left.
+    - A side road or junction is approaching from the left.
+    - A sharp turn is coming up on the left.
+    correctAnswerIndex: 2
+  - question: Imagine you are driving on a rural road outside of Kampala and encounter
+      this road sign. What immediate action should you take?
+    questionSprite: {fileID: 21300000, guid: ca3987b8a5a55b843be5f641290b40dc, type: 3}
+    answers:
+    - Reduce your speed and be prepared to steer carefully through curves.
+    - ' Pull over and wait for another vehicle to lead you through the winding section.'
+    - Increase your speed to pass through the winding section quickly.
+    - ' Maintain your current speed as the road ahead is clear.'
+    correctAnswerIndex: 0
+  - question: In Uganda, road signs use different shapes to communicate different
+      types of information to drivers. Which of the following statements is MOST
+      accurate?
+    questionSprite: {fileID: 0}
+    answers:
+    - Circular signs warn drivers of potential hazards, while triangular signs indicate
+      mandatory actions.
+    - Triangular signs warn drivers of potential hazards, while circular signs convey
+      instructions (either mandatory or prohibitive).
+    - Both circular and triangular signs are used interchangeably to indicate speed
+      limits.
+    - ' Square-shaped signs indicate hazards, while rectangular signs give instructions.'
+    correctAnswerIndex: 1
+  - question: You are driving towards Mukono from Kampala and see this sign. What
+      potential road condition should you anticipate ahead?
+    questionSprite: {fileID: 21300000, guid: 690988fdaaae6664aa9a4b84e88eedb5, type: 3}
+    answers:
+    - A roundabout requiring you to yield to traffic from the right.
+    - A section of road with a sharp bend to the left.
+    - ' An intersection with traffic lights that may be malfunctioning.'
+    - ' A steep hill requiring you to use a lower gear.'
+    correctAnswerIndex: 1
+  - question: While driving on a winding road in the mountainous region of Kabale,
+      you encounter this sign. What does this sign warn you about and what should
+      you do?
+    questionSprite: {fileID: 21300000, guid: 190d00fb1988de047bd4d392790f1a54, type: 3}
+    answers:
+    - It warns of a slight bend in the road; maintain your current speed.
+    - It warns of a steep hill; engage a lower gear for climbing.
+    - ' It warns of a roundabout ahead; prepare to yield to traffic from the right.'
+    - It warns of a sharp curve that bends back on itself; significantly reduce speed
+      and be prepared to steer sharply.
+    correctAnswerIndex: 3
+  - question: You are driving on a road outside of Kampala and see this sign. What
+      does this sign indicate and what is the safest course of action?
+    questionSprite: {fileID: 21300000, guid: 9f4d1190fcb1dea4cbd416da85aac9ea, type: 3}
+    answers:
+    - ' It indicates two consecutive bends, the first to the right; reduce your speed
+      and be prepared to steer through both bends.'
+    - It indicates a roundabout ahead; prepare to yield to traffic from the right.
+    - It indicates a merging lane to the right; check your mirrors and prepare to
+      merge.
+    - It indicates a single sharp turn to the right; maintain your current speed.
+    correctAnswerIndex: 0
+  - question: Imagine you are driving on a main like Jinja road within Kampala and
+      you see this road sign. What should be your primary concern as you approach
+      the intersection ahead?
+    questionSprite: {fileID: 21300000, guid: 9f4d1190fcb1dea4cbd416da85aac9ea, type: 3}
+    answers:
+    - The presence of a roundabout requiring you to yield to traffic from the right.
+    - The likelihood of a sharp bend in the road to the left.
+    - The potential for traffic approaching from both the left and right sides.
+    - The need to prepare for a steep hill climb.
+    correctAnswerIndex: 2
+  - question: As you drive through a trading center on the outskirts of Gulu, you
+      spot this road sign. What should you be particularly attentive to as you approach
+      the upcoming area?
+    questionSprite: {fileID: 21300000, guid: 1f14731e385e68f498d27e673ac39dc5, type: 3}
+    answers:
+    - The possibility of a sharp curve requiring you to reduce speed.
+    - The need to prepare for a roundabout with traffic approaching from the right.
+    - The likelihood of encountering a steep hill requiring a lower gear.
+    - The potential for vehicles entering the main road from a side street on the
+      left.
+    correctAnswerIndex: 3
+  - question: You are driving on a road in a suburban area of Kampala and encounter
+      this sign. What does this sign warn you about and what should you do?
+    questionSprite: {fileID: 21300000, guid: f54e5a8ec6c90544c9334e81155dfa64, type: 3}
+    answers:
+    - ' It warns of two separate junctions, one slightly offset from the other; be
+      prepared for traffic from both sides and proceed with caution.'
+    - ' It warns of a series of sharp curves; maintain your speed and steer carefully.'
+    - It warns of a roundabout ahead; yield to traffic from the right.
+    - It warns of a steep hill; engage a lower gear for climbing.
+    correctAnswerIndex: 0
+  - question: You're driving along a main road leading into Mbarara town center and
+      you encounter this road sign. What potential traffic situation should you be
+      most prepared for as you approach the intersection ahead?
+    questionSprite: {fileID: 21300000, guid: 10aa6244f6a932449852e8058566d09e, type: 3}
+    answers:
+    - A dead-end street or side road joining from either the left or right, creating
+      potential cross-traffic.
+    - A sharp curve in the road demanding a reduction in speed.
+    - A roundabout requiring you to yield to traffic from the right.
+    - A steep hill requiring you to engage a lower gear for ascent.
+    correctAnswerIndex: 0
+  - question: On the way to Entebbe from Kampala, you see this road sign. What should
+      you be particularly mindful of as you approach the upcoming junction?
+    questionSprite: {fileID: 21300000, guid: 1a844a818a913114b80f1845493ce2e8, type: 3}
+    answers:
+    - Oncoming traffic merging from a single side road to the left.
+    - ' A steep hill requiring you to engage a lower gear for ascent.'
+    - A roundabout requiring you to yield to traffic from the right.
+    - Traffic diverging into two separate paths, requiring you to choose your route
+      carefully.
+    correctAnswerIndex: 3
 --- !u!1 &741724120
 GameObject:
   m_ObjectHideFlags: 0
@@ -1094,7 +1217,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 397, y: -225}
+  m_AnchoredPosition: {x: 397, y: -232}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &760299332
@@ -1131,7 +1254,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 294, y: -68.50001}
+  m_AnchoredPosition: {x: 294, y: -80}
   m_SizeDelta: {x: 388.3799, y: 237}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &760299334
