@@ -1078,6 +1078,234 @@ MonoBehaviour:
     - Traffic diverging into two separate paths, requiring you to choose your route
       carefully.
     correctAnswerIndex: 3
+  - question: On the way to Jinja from Kampala, you see this road sign. What should
+      you be prepared to do as you approach the upcoming intersection?
+    questionSprite: {fileID: 21300000, guid: 970b91451f9a64e458af23c641b53bfd, type: 3}
+    answers:
+    - Stop completely and wait for a traffic signal to change.
+    - ' Yield to traffic already circulating within a roundabout.'
+    - Prepare for a sharp turn to the left.
+    - Prepare for a steep hill requiring a lower gear.
+    correctAnswerIndex: 1
+  - question: On the way to a busy market in Kampala, you see this road sign. What
+      should you be prepared for as you approach the upcoming intersection?
+    questionSprite: {fileID: 21300000, guid: a6d02d21204ca194aab3d1c8ef293bce, type: 3}
+    answers:
+    - A roundabout requiring you to yield to traffic from the right.
+    - A series of sharp curves requiring you to reduce speed.
+    - Traffic signals controlling the flow of vehicles.
+    - A steep hill requiring a lower gear for ascent.
+    correctAnswerIndex: 2
+  - question: On the way to a market in a rural town outside of Masaka, you see this
+      road sign. What should you be prepared for as you continue driving?
+    questionSprite: {fileID: 21300000, guid: b30adb18c1278354381e578f56ab6db3, type: 3}
+    answers:
+    - ' A roundabout requiring you to yield to traffic from the right.'
+    - A steep hill requiring a lower gear for ascent.
+    - ' Traffic signals controlling the flow of vehicles.'
+    - A section of road where the width decreases, requiring you to be cautious of
+      oncoming traffic.
+    correctAnswerIndex: 3
+  - question: You are driving on a road outside of Jinja and come across this sign.
+      What potential road condition should you be aware of as you proceed?
+    questionSprite: {fileID: 21300000, guid: 637174af6bf8b3548b2bb42217833c62, type: 3}
+    answers:
+    - The road will become wider on the right.
+    - The road will narrow on the right side.
+    - The road will have a sharp turn to the right.
+    - The road will have a steep incline on the right.
+    correctAnswerIndex: 1
+  - question: You are driving on a dual carriageway outside of Kampala and see this
+      sign. What should you anticipate as you continue driving?
+    questionSprite: {fileID: 21300000, guid: e1e35fa0c7f3e9d42bd601a58a4ae119, type: 3}
+    answers:
+    - The dual carriageway will merge into a single carriageway.
+    - The road will become a roundabout.
+    - The road will split into two separate lanes.
+    - The road will have a steep incline.
+    correctAnswerIndex: 0
+  - question: You are driving on a single carriageway road and see this sign. What
+      should you expect as you continue driving?
+    questionSprite: {fileID: 21300000, guid: 9dc0f2bc4224ea3498a25dc276d9c3e8, type: 3}
+    answers:
+    - The road will merge into a single lane.
+    - The road will have a roundabout ahead.
+    - The road will have a steep incline.
+    - The road will become a dual carriageway.
+    correctAnswerIndex: 3
+  - question: You are driving on a single lane road and encounter this sign. What
+      should you expect as you continue driving?
+    questionSprite: {fileID: 21300000, guid: c862df7eed1868e43801c62c72eaa5f4, type: 3}
+    answers:
+    - The road will become a one-way street.
+    - The road will have a steep incline.
+    - ' The road will have traffic coming from both directions.'
+    - The road will have a roundabout ahead.
+    correctAnswerIndex: 2
+  - question: When driving a large truck on a road outside of Kampala and you see
+      this sign, what should you do?
+    questionSprite: {fileID: 21300000, guid: 2905b7b8d2daf56468e3915b9a98cc86, type: 3}
+    answers:
+    - When you see this sign, be aware that your vehicle may not fit under the upcoming
+      structure if it is taller than 4.4 meters.
+    - ' When you see this sign, continue driving as the clearance is sufficient for
+      all vehicles.'
+    - ' When you see this sign, prepare to turn left at the next intersection.'
+    - ' When you see this sign, increase your speed to pass through the area quickly.'
+    correctAnswerIndex: 0
+  - question: create a question (rephrase the question with when) related for this
+      too
+    questionSprite: {fileID: 21300000, guid: 3b78d87915f6acb4e98a556bb6b5024c, type: 3}
+    answers:
+    - ' When you see this sign, maintain your current speed as the road ahead is
+      smooth.'
+    - When you see this sign, reduce your speed and be prepared for bumps or an uneven
+      road surface.
+    - When you see this sign, prepare to turn left at the next intersection.
+    - When you see this sign, increase your speed to pass through the area quickly.
+    correctAnswerIndex: 1
+  - question: On the way to a school in a residential area of Kampala, you see this
+      road sign. What should you be prepared to do as you continue driving?
+    questionSprite: {fileID: 21300000, guid: b4658b63e84d08b40b84ea50d076d7d4, type: 3}
+    answers:
+    - On the way, be prepared to increase your speed to pass over a smooth section
+      of road.
+    - On the way, be prepared to turn left at the next intersection.
+    - On the way, be prepared to stop completely for a traffic signal.
+    - On the way, be prepared to reduce your speed and carefully drive over a speed
+      bump.
+    correctAnswerIndex: 3
+  - question: On the way to a village market in a rural area of Uganda, you see this
+      road sign. What should you be prepared to do as you continue driving?
+    questionSprite: {fileID: 21300000, guid: 250705448f7bbb94aa20b0809cbbbce1, type: 3}
+    answers:
+    - ' On the way, be prepared to increase your speed to pass over a smooth section
+      of road.'
+    - On the way, be prepared to turn left at the next intersection.
+    - On the way, be prepared to reduce your speed and carefully drive over a dip
+      or rough section of road.
+    - ' On the way, be prepared to stop completely for a traffic signal.'
+    correctAnswerIndex: 2
+  - question: 
+    questionSprite: {fileID: 0}
+    answers:
+    - 
+    - 
+    - 
+    - 
+    correctAnswerIndex: 0
+  - question: 
+    questionSprite: {fileID: 0}
+    answers:
+    - 
+    - 
+    - 
+    - 
+    correctAnswerIndex: 0
+  - question: 
+    questionSprite: {fileID: 0}
+    answers:
+    - 
+    - 
+    - 
+    - 
+    correctAnswerIndex: 0
+  - question: 
+    questionSprite: {fileID: 0}
+    answers:
+    - 
+    - 
+    - 
+    - 
+    correctAnswerIndex: 0
+  - question: 
+    questionSprite: {fileID: 0}
+    answers:
+    - 
+    - 
+    - 
+    - 
+    correctAnswerIndex: 0
+  - question: 
+    questionSprite: {fileID: 0}
+    answers:
+    - 
+    - 
+    - 
+    - 
+    correctAnswerIndex: 0
+  - question: 
+    questionSprite: {fileID: 0}
+    answers:
+    - 
+    - 
+    - 
+    - 
+    correctAnswerIndex: 0
+  - question: 
+    questionSprite: {fileID: 0}
+    answers:
+    - 
+    - 
+    - 
+    - 
+    correctAnswerIndex: 0
+  - question: 
+    questionSprite: {fileID: 0}
+    answers:
+    - 
+    - 
+    - 
+    - 
+    correctAnswerIndex: 0
+  - question: 
+    questionSprite: {fileID: 0}
+    answers:
+    - 
+    - 
+    - 
+    - 
+    correctAnswerIndex: 0
+  - question: 
+    questionSprite: {fileID: 0}
+    answers:
+    - 
+    - 
+    - 
+    - 
+    correctAnswerIndex: 0
+  - question: 
+    questionSprite: {fileID: 0}
+    answers:
+    - 
+    - 
+    - 
+    - 
+    correctAnswerIndex: 0
+  - question: 
+    questionSprite: {fileID: 0}
+    answers:
+    - 
+    - 
+    - 
+    - 
+    correctAnswerIndex: 0
+  - question: 
+    questionSprite: {fileID: 0}
+    answers:
+    - 
+    - 
+    - 
+    - 
+    correctAnswerIndex: 0
+  - question: 
+    questionSprite: {fileID: 0}
+    answers:
+    - 
+    - 
+    - 
+    - 
+    correctAnswerIndex: 0
   timePerQuestion: 10
   correctColor: {r: 0, g: 1, b: 0, a: 1}
   incorrectColor: {r: 1, g: 0, b: 0, a: 1}
