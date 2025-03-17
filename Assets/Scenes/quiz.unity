@@ -934,7 +934,7 @@ MonoBehaviour:
   - {fileID: 1589892180}
   scoreText: {fileID: 1297724330}
   timerText: {fileID: 964374449}
-  highScoreText: {fileID: 1779855562}
+  questionTrackerText: {fileID: 1779855562}
   nextButton: {fileID: 741724121}
   exitButton: {fileID: 902000781}
   questions:
@@ -1164,17 +1164,6 @@ MonoBehaviour:
     - When you see this sign, prepare to turn left at the next intersection.
     - When you see this sign, increase your speed to pass through the area quickly.
     correctAnswerIndex: 1
-  - question: On the way to a school in a residential area of Kampala, you see this
-      road sign. What should you be prepared to do as you continue driving?
-    questionSprite: {fileID: 21300000, guid: b4658b63e84d08b40b84ea50d076d7d4, type: 3}
-    answers:
-    - On the way, be prepared to increase your speed to pass over a smooth section
-      of road.
-    - On the way, be prepared to turn left at the next intersection.
-    - On the way, be prepared to stop completely for a traffic signal.
-    - On the way, be prepared to reduce your speed and carefully drive over a speed
-      bump.
-    correctAnswerIndex: 3
   - question: On the way to a village market in a rural area of Uganda, you see this
       road sign. What should you be prepared to do as you continue driving?
     questionSprite: {fileID: 21300000, guid: 250705448f7bbb94aa20b0809cbbbce1, type: 3}
@@ -1194,122 +1183,13 @@ MonoBehaviour:
     - 
     - 
     correctAnswerIndex: 0
-  - question: 
-    questionSprite: {fileID: 0}
-    answers:
-    - 
-    - 
-    - 
-    - 
-    correctAnswerIndex: 0
-  - question: 
-    questionSprite: {fileID: 0}
-    answers:
-    - 
-    - 
-    - 
-    - 
-    correctAnswerIndex: 0
-  - question: 
-    questionSprite: {fileID: 0}
-    answers:
-    - 
-    - 
-    - 
-    - 
-    correctAnswerIndex: 0
-  - question: 
-    questionSprite: {fileID: 0}
-    answers:
-    - 
-    - 
-    - 
-    - 
-    correctAnswerIndex: 0
-  - question: 
-    questionSprite: {fileID: 0}
-    answers:
-    - 
-    - 
-    - 
-    - 
-    correctAnswerIndex: 0
-  - question: 
-    questionSprite: {fileID: 0}
-    answers:
-    - 
-    - 
-    - 
-    - 
-    correctAnswerIndex: 0
-  - question: 
-    questionSprite: {fileID: 0}
-    answers:
-    - 
-    - 
-    - 
-    - 
-    correctAnswerIndex: 0
-  - question: 
-    questionSprite: {fileID: 0}
-    answers:
-    - 
-    - 
-    - 
-    - 
-    correctAnswerIndex: 0
-  - question: 
-    questionSprite: {fileID: 0}
-    answers:
-    - 
-    - 
-    - 
-    - 
-    correctAnswerIndex: 0
-  - question: 
-    questionSprite: {fileID: 0}
-    answers:
-    - 
-    - 
-    - 
-    - 
-    correctAnswerIndex: 0
-  - question: 
-    questionSprite: {fileID: 0}
-    answers:
-    - 
-    - 
-    - 
-    - 
-    correctAnswerIndex: 0
-  - question: 
-    questionSprite: {fileID: 0}
-    answers:
-    - 
-    - 
-    - 
-    - 
-    correctAnswerIndex: 0
-  - question: 
-    questionSprite: {fileID: 0}
-    answers:
-    - 
-    - 
-    - 
-    - 
-    correctAnswerIndex: 0
-  - question: 
-    questionSprite: {fileID: 0}
-    answers:
-    - 
-    - 
-    - 
-    - 
-    correctAnswerIndex: 0
   timePerQuestion: 10
   correctColor: {r: 0, g: 1, b: 0, a: 1}
   incorrectColor: {r: 1, g: 0, b: 0, a: 1}
   defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  greenTimerColor: {r: 0, g: 1, b: 0, a: 1}
+  yellowTimerColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  redTimerColor: {r: 1, g: 0, b: 0, a: 1}
   audioSource: {fileID: 966038645}
   correctSound: {fileID: 8300000, guid: e4ea45554f0587146adcea4aa8ea4544, type: 3}
   incorrectSound: {fileID: 8300000, guid: 1d19af6708fd8834db4741db67877dc8, type: 3}
@@ -2556,7 +2436,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -210.00002, y: 0}
+  m_AnchoredPosition: {x: -210.00002, y: 10}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1301722986
@@ -3705,7 +3585,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -346.70224, y: 0, z: -390.9859, w: 0}
+  m_margin: {x: -417.09592, y: 0, z: -390.9859, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3750,7 +3630,7 @@ GameObject:
   - component: {fileID: 1779855563}
   - component: {fileID: 1779855562}
   m_Layer: 5
-  m_Name: HighScore
+  m_Name: Question tracker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3871,7 +3751,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -139, y: 50}
+  m_AnchoredPosition: {x: 307, y: 15}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2021947646

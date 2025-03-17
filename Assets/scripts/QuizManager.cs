@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 using System.Collections;
 using DG.Tweening; // Import DOTween for animations
 using System.Linq;
+
 public class QuizManager : MonoBehaviour
 {
     [Header("UI Elements")]
@@ -36,6 +37,9 @@ public class QuizManager : MonoBehaviour
     public Color correctColor = Color.green;
     public Color incorrectColor = Color.red;
     public Color defaultColor = Color.white;
+    public Color greenTimerColor = Color.green;
+    public Color yellowTimerColor = Color.yellow;
+    public Color redTimerColor = Color.red;
 
     [Header("Sound Effects")]
     public AudioSource audioSource;
@@ -57,6 +61,9 @@ public class QuizManager : MonoBehaviour
             timer -= Time.deltaTime;
             timerText.text = "Time: " + Mathf.Ceil(timer).ToString();
 
+            // Change timer color based on the remaining time
+            UpdateTimerColor();
+
             if (timer <= 0)
             {
                 isTimerRunning = false;
@@ -64,6 +71,22 @@ public class QuizManager : MonoBehaviour
                 HighlightCorrectAnswer();
                 StartCoroutine(NextQuestionAfterDelay());
             }
+        }
+    }
+
+    void UpdateTimerColor()
+    {
+        if (timer > timePerQuestion * 0.5f) // More than 50% time left
+        {
+            timerText.color = greenTimerColor;
+        }
+        else if (timer > timePerQuestion * 0.2f) // More than 20% time left
+        {
+            timerText.color = yellowTimerColor;
+        }
+        else // Less than 20% time left
+        {
+            timerText.color = redTimerColor;
         }
     }
 
