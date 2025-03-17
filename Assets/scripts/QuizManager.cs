@@ -1,11 +1,11 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using System.Collections;
 using DG.Tweening; // Import DOTween for animations
-
+using System.Linq;
 public class QuizManager : MonoBehaviour
 {
     [Header("UI Elements")]
@@ -15,16 +15,16 @@ public class QuizManager : MonoBehaviour
     public TMP_Text[] answerTexts;
     public TMP_Text scoreText;
     public TMP_Text timerText;
-    public TMP_Text highScoreText;
+    public TMP_Text questionTrackerText; // New text element for tracking questions
     public Button nextButton;
     public Button exitButton;
 
     [Header("Quiz Data")]
     public List<QuestionData> questions;
+    private List<QuestionData> selectedQuestions = new List<QuestionData>(); // Holds selected random questions
     private QuestionData currentQuestion;
     private int score = 0;
     private int highScore = 0;
-    private List<int> questionIndices;
     private int questionIndex = 0;
 
     [Header("Timer Settings")]
@@ -46,7 +46,7 @@ public class QuizManager : MonoBehaviour
     void Start()
     {
         LoadHighScore();
-        ShuffleQuestions();
+        SelectRandomQuestions(); // Select 20 random questions
         LoadNextQuestion();
     }
 
@@ -67,21 +67,30 @@ public class QuizManager : MonoBehaviour
         }
     }
 
-    void ShuffleQuestions()
+    void SelectRandomQuestions()
     {
-        questionIndices = new List<int>();
+        selectedQuestions.Clear();
+
+        // Select 20 random questions from the available pool
+        List<int> availableIndices = new List<int>();
         for (int i = 0; i < questions.Count; i++)
         {
-            questionIndices.Add(i);
+            availableIndices.Add(i);
         }
-        questionIndices.Sort((a, b) => Random.Range(-1, 2));
+
+        // Shuffle and select up to 20 questions
+        availableIndices = availableIndices.OrderBy(x => Random.value).ToList();
+        for (int i = 0; i < Mathf.Min(20, availableIndices.Count); i++)
+        {
+            selectedQuestions.Add(questions[availableIndices[i]]);
+        }
     }
 
     void LoadNextQuestion()
     {
-        if (questionIndex < questionIndices.Count)
+        if (questionIndex < selectedQuestions.Count)
         {
-            currentQuestion = questions[questionIndices[questionIndex]];
+            currentQuestion = selectedQuestions[questionIndex];
             questionText.text = currentQuestion.question;
             questionImage.sprite = currentQuestion.questionSprite;
 
@@ -100,6 +109,9 @@ public class QuizManager : MonoBehaviour
             timer = timePerQuestion;
             isTimerRunning = true;
             questionIndex++;
+
+            // Update the question tracker text
+            questionTrackerText.text = $"{questionIndex} / {selectedQuestions.Count}";
         }
         else
         {
@@ -156,8 +168,11 @@ public class QuizManager : MonoBehaviour
 
     void EndQuiz()
     {
-        questionText.text = "Quiz Over! Final Score: " + score;
+        SaveHighScore();
+
+        questionText.text = "Quiz Over! \nFinal Score: " + score + "\nHigh Score: " + highScore;
         questionImage.gameObject.SetActive(false);
+
         foreach (var btn in answerButtons)
         {
             btn.gameObject.SetActive(false);
@@ -167,13 +182,11 @@ public class QuizManager : MonoBehaviour
             txt.gameObject.SetActive(false);
         }
         nextButton.gameObject.SetActive(false);
-        SaveHighScore();
     }
 
     void LoadHighScore()
     {
         highScore = PlayerPrefs.GetInt("HighScore", 0);
-        highScoreText.text = "High Score: " + highScore;
     }
 
     void SaveHighScore()
