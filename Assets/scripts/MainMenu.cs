@@ -17,4 +17,12 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("quiz");
     }
+    public void StartBasicLession()
+    {
+        SceneManager.LoadScene("BasicControls");
+    }
+    public void StartIntersection()
+    {
+        SceneManager.LoadScene("Intersection");
+    }
 }
