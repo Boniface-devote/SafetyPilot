@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CameraToggle : MonoBehaviour
 {
     public Camera mainCamera;   // Assign the main camera in the inspector
     public Camera frontCamera;  // Assign the front camera in the inspector
+    public Button toggleButton; // Assign the UI Button in the inspector
 
     private Camera activeCamera;
 
@@ -20,6 +22,12 @@ public class CameraToggle : MonoBehaviour
         activeCamera = mainCamera;
         mainCamera.enabled = true;
         frontCamera.enabled = false;
+
+        // Attach button click event if a button is assigned
+        if (toggleButton != null)
+        {
+            toggleButton.onClick.AddListener(ToggleCamera);
+        }
     }
 
     void Update()
@@ -31,7 +39,7 @@ public class CameraToggle : MonoBehaviour
         }
     }
 
-    void ToggleCamera()
+    public void ToggleCamera()
     {
         // Switch between cameras
         if (activeCamera == mainCamera)
