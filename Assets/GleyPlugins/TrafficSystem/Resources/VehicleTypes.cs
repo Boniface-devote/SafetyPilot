@@ -3,9 +3,6 @@ namespace GleyTrafficSystem
 {
 	public enum VehicleTypes
 	{
-		Car,
-		Truck,
-		Subaru,
 	}
 }
 #endif
