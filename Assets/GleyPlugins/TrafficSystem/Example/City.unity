@@ -181516,6 +181516,7 @@ MonoBehaviour:
   alertCanvas: {fileID: 1331353235}
   speedText: {fileID: 1206092178}
   scoreText: {fileID: 757802860}
+  handbrakeButton: {fileID: 1894650579}
   speedLimit: 70
   sharpTurnThreshold: 42
   alertDuration: 1
@@ -298498,7 +298499,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5451555663682435376, guid: 56726f7c6e5254348b86fcf28347696d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -242.01
+      value: -254
       objectReference: {fileID: 0}
     - target: {fileID: 5451555663682435376, guid: 56726f7c6e5254348b86fcf28347696d, type: 3}
       propertyPath: m_LocalPosition.y

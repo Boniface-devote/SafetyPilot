@@ -7,6 +7,9 @@ TagManager:
   - TrafficLight
   - SpeedBump
   - WheelCollider
+  - UrbanZone
+  - HighwayZone
+  - Sensor
   layers:
   - Default
   - TransparentFX
@@ -20,9 +23,9 @@ TagManager:
   - Traffic
   - Buildings
   - SpeedBump
-  - 
-  - 
-  - 
+  - UrbanZone
+  - HighwayZone
+  - Sensor
   - 
   - 
   - 

@@ -1,5 +1,7 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
+using System.Collections;
 
 public class DrivingMonitor : MonoBehaviour
 {
@@ -12,8 +14,10 @@ public class DrivingMonitor : MonoBehaviour
     public Transform alertCanvas;
     public TextMeshProUGUI speedText;
     public TextMeshProUGUI scoreText;
+    public Button handbrakeButton;
 
-    public float speedLimit = 50f;
+    public float defaultSpeedLimit = 60f;
+    private float speedLimit;
     public float sharpTurnThreshold = 35f;
     public float alertDuration = 2f;
     public int playerScore = 100;
@@ -23,20 +27,20 @@ public class DrivingMonitor : MonoBehaviour
     private float safeDrivingTimer = 0f;
     private Camera mainCamera;
     private bool isDrivingSafely = true;
+    private bool isOnRoad = false;
+    private bool canDetect = true;
 
     void Start()
     {
         mainCamera = Camera.main;
+        speedLimit = defaultSpeedLimit;
         if (speedText != null) speedText.text = "Speed: 0 km/h";
         UpdateScoreDisplay();
 
-        // ... (Your existing Start() code) ...
-
-        // Check if a GameObject with the "SpeedBump" tag exists.
-        GameObject speedBump = GameObject.FindGameObjectWithTag("SpeedBump");
-        GameObject wheelColliderObject = GameObject.FindGameObjectWithTag("WheelCollider");
-
-      
+        if (handbrakeButton != null)
+        {
+            handbrakeButton.onClick.AddListener(TriggerSuddenBraking);
+        }
     }
 
     void Update()
@@ -46,6 +50,7 @@ public class DrivingMonitor : MonoBehaviour
         if (alertCanvas) FaceCamera();
         UpdateSpeedDisplay();
         RewardSafeDriving();
+        CheckSuddenBraking();
     }
 
     void MonitorDriving()
@@ -70,14 +75,14 @@ public class DrivingMonitor : MonoBehaviour
         previousSpeed = currentSpeed;
     }
 
-    void ShowAlert(string message, int penalty)
+    void ShowAlert(string message, int penalty = 0)
     {
         if (alertText != null)
         {
             alertText.text = message;
             alertText.gameObject.SetActive(true);
             alertTimer = alertDuration;
-            ReduceScore(penalty);
+            if (penalty > 0) ReduceScore(penalty);
         }
     }
 
@@ -147,17 +152,63 @@ public class DrivingMonitor : MonoBehaviour
 
         if (collision.gameObject.CompareTag("SpeedBump"))
         {
-            if (currentSpeed > 25f) // Only show alert if speed is above 20 km/h
+            if (currentSpeed > 25f)
             {
                 ShowAlert("SpeedBump Collision!", 5);
                 isDrivingSafely = false;
             }
-
         }
         else
         {
-            ShowAlert("Accident!", 10); // Any other collision = accident
+            ShowAlert("Accident!", 10);
             isDrivingSafely = false;
+        }
+    }
+
+    void CheckSuddenBraking()
+    {
+        float currentSpeed = carRigidbody.linearVelocity.magnitude * 3.6f;
+        if (currentSpeed > 10f && Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            TriggerSuddenBraking();
+        }
+    }
+
+    void TriggerSuddenBraking()
+    {
+        float currentSpeed = carRigidbody.linearVelocity.magnitude * 3.6f;
+        if (currentSpeed > 10f)
+        {
+            ShowAlert("Sudden Braking!", 5);
+        }
+    }
+
+    private IEnumerator DetectionCooldown()
+    {
+        canDetect = false;
+        yield return new WaitForSeconds(1f);
+        canDetect = true;
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if ((other.CompareTag("UrbanZone") || other.CompareTag("HighwayZone")) && !isOnRoad && canDetect)
+        {
+            speedLimit = other.CompareTag("UrbanZone") ? 40f : 100f;
+            isOnRoad = true;
+            ShowAlert(other.tag + ". Speed limit " + speedLimit + " km/h.");
+            StartCoroutine(DetectionCooldown());
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if ((other.CompareTag("UrbanZone") || other.CompareTag("HighwayZone")) && isOnRoad && canDetect)
+        {
+            speedLimit = defaultSpeedLimit;
+            isOnRoad = false;
+            ShowAlert("Exited " + other.tag + ". Speed limit default.");
+            StartCoroutine(DetectionCooldown());
         }
     }
 }
