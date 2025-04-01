@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 3
   tags:
   - TrafficLight
+  - SpeedBump
+  - WheelCollider
   layers:
   - Default
   - TransparentFX
@@ -17,7 +19,7 @@ TagManager:
   - Road
   - Traffic
   - Buildings
-  - 
+  - SpeedBump
   - 
   - 
   - 

@@ -9,24 +9,34 @@ public class DrivingMonitor : MonoBehaviour
     public WheelCollider rearRightWheel;
     public Rigidbody carRigidbody;
     public TextMeshProUGUI alertText;
-    public Transform alertCanvas; // Assign World Space Canvas above the car
-    public TextMeshProUGUI speedText; // Reference to TextMeshProUGUI for speed display
+    public Transform alertCanvas;
+    public TextMeshProUGUI speedText;
+    public TextMeshProUGUI scoreText;
 
     public float speedLimit = 50f;
-    public float harshBrakeThreshold = 10f;
     public float sharpTurnThreshold = 35f;
-    public float handBrakeTorque = 3000f;
-    public float harshBrakeTiltThreshold = 1.07f;
     public float alertDuration = 2f;
+    public int playerScore = 100;
 
     private float previousSpeed;
     private float alertTimer = 0f;
+    private float safeDrivingTimer = 0f;
     private Camera mainCamera;
+    private bool isDrivingSafely = true;
 
     void Start()
     {
         mainCamera = Camera.main;
-        if (speedText != null) speedText.text = "Speed: 0 km/h"; // Set initial speed
+        if (speedText != null) speedText.text = "Speed: 0 km/h";
+        UpdateScoreDisplay();
+
+        // ... (Your existing Start() code) ...
+
+        // Check if a GameObject with the "SpeedBump" tag exists.
+        GameObject speedBump = GameObject.FindGameObjectWithTag("SpeedBump");
+        GameObject wheelColliderObject = GameObject.FindGameObjectWithTag("WheelCollider");
+
+      
     }
 
     void Update()
@@ -34,52 +44,40 @@ public class DrivingMonitor : MonoBehaviour
         MonitorDriving();
         HandleAlertDisplay();
         if (alertCanvas) FaceCamera();
-        UpdateSpeedDisplay(); // Update the speed display in each frame
+        UpdateSpeedDisplay();
+        RewardSafeDriving();
     }
 
     void MonitorDriving()
     {
-        float currentSpeed = carRigidbody.linearVelocity.magnitude * 3.6f; // Convert to km/h
-        float accelerationInput = Input.GetAxis("Vertical");
+        float currentSpeed = carRigidbody.linearVelocity.magnitude * 3.6f;
         float steeringAngle = Mathf.Max(Mathf.Abs(frontLeftWheel.steerAngle), Mathf.Abs(frontRightWheel.steerAngle));
-        float carTiltX = transform.rotation.eulerAngles.x;
-        float forwardVelocity = Vector3.Dot(carRigidbody.linearVelocity, transform.forward);
 
-        if (carTiltX > 180f) carTiltX -= 360f;
+        isDrivingSafely = true;
 
-        // Detect reversing
-        if (accelerationInput < 0 && forwardVelocity < -0.5f) ShowAlert("Reversing!");
-
-        // Detect harsh braking
-        float speedDifference = previousSpeed - currentSpeed;
-        if (speedDifference > harshBrakeThreshold || Mathf.Abs(carTiltX) >= harshBrakeTiltThreshold)
+        if (steeringAngle > sharpTurnThreshold)
         {
-            ShowAlert("Harsh Braking!");
-            ApplyHandBrake();
+            ShowAlert("Sharp Turn!", 2);
+            isDrivingSafely = false;
         }
 
-        // Detect sharp turns
-        if (steeringAngle > sharpTurnThreshold) ShowAlert("Sharp Turn!");
-
-        // Detect overspeeding
-        if (currentSpeed > speedLimit) ShowAlert("Overspeeding!");
+        if (currentSpeed > speedLimit)
+        {
+            ShowAlert("Overspeeding!", 10);
+            isDrivingSafely = false;
+        }
 
         previousSpeed = currentSpeed;
     }
 
-    void ApplyHandBrake()
-    {
-        rearLeftWheel.brakeTorque = handBrakeTorque;
-        rearRightWheel.brakeTorque = handBrakeTorque;
-    }
-
-    void ShowAlert(string message)
+    void ShowAlert(string message, int penalty)
     {
         if (alertText != null)
         {
             alertText.text = message;
             alertText.gameObject.SetActive(true);
             alertTimer = alertDuration;
+            ReduceScore(penalty);
         }
     }
 
@@ -97,17 +95,69 @@ public class DrivingMonitor : MonoBehaviour
         if (mainCamera)
         {
             alertCanvas.LookAt(mainCamera.transform);
-            alertCanvas.Rotate(0, 180, 0); // Flip to face camera properly
+            alertCanvas.Rotate(0, 180, 0);
         }
     }
 
-    // Update the speed display
     void UpdateSpeedDisplay()
     {
         if (speedText != null)
         {
-            float currentSpeed = carRigidbody.linearVelocity.magnitude * 3.6f; // Convert to km/h
-            speedText.text = "Speed: " + currentSpeed.ToString("F1") + " km/h"; // Update the text
+            float currentSpeed = carRigidbody.linearVelocity.magnitude * 3.6f;
+            speedText.text = "Speed: " + currentSpeed.ToString("F1") + " km/h";
+        }
+    }
+
+    void ReduceScore(int penalty)
+    {
+        playerScore -= penalty;
+        if (playerScore < 0) playerScore = 0;
+        UpdateScoreDisplay();
+    }
+
+    void UpdateScoreDisplay()
+    {
+        if (scoreText != null)
+        {
+            scoreText.text = "Score: " + playerScore;
+        }
+    }
+
+    void RewardSafeDriving()
+    {
+        if (isDrivingSafely)
+        {
+            safeDrivingTimer += Time.deltaTime;
+            if (safeDrivingTimer >= 5f)
+            {
+                playerScore += 5;
+                safeDrivingTimer = 0f;
+                UpdateScoreDisplay();
+            }
+        }
+        else
+        {
+            safeDrivingTimer = 0f;
+        }
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        float currentSpeed = carRigidbody.linearVelocity.magnitude * 3.6f;
+
+        if (collision.gameObject.CompareTag("SpeedBump"))
+        {
+            if (currentSpeed > 25f) // Only show alert if speed is above 20 km/h
+            {
+                ShowAlert("SpeedBump Collision!", 5);
+                isDrivingSafely = false;
+            }
+
+        }
+        else
+        {
+            ShowAlert("Accident!", 10); // Any other collision = accident
+            isDrivingSafely = false;
         }
     }
 }
