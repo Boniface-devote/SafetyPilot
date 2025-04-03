@@ -1468,7 +1468,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 65c8d5fa0b6bbe245920715809af014d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6c3297772fd0b7b4fa00e5223dece08e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4556,8 +4556,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.0690625, y: 1.0613682, z: 1.0571594}
-  m_Center: {x: 0, y: -0.030684114, z: -1.7214203}
+  m_Size: {x: 2.0690625, y: 1.0613682, z: 0.6613159}
+  m_Center: {x: 0, y: -0.030684114, z: -1.919342}
 --- !u!4 &412546187 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1608399422362317136, guid: 309c7f27e1aeaaf49a43873527166b60, type: 3}
@@ -5970,7 +5970,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b93475b4f1d5d144d82f1564dc0fcb79, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 05de6aadb48028c4e876b43ec2402c20, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12272,7 +12272,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5451555663682435376, guid: 56726f7c6e5254348b86fcf28347696d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 452.26
+      value: 457.65
       objectReference: {fileID: 0}
     - target: {fileID: 5451555663682435376, guid: 56726f7c6e5254348b86fcf28347696d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -65105,7 +65105,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c18621288e9e2df45a31c553d566b170, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.91
+      value: 2.94
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c18621288e9e2df45a31c553d566b170, type: 3}
       propertyPath: m_LocalPosition.z

@@ -448,8 +448,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.0690625, y: 1, z: 4.5}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.8710058, y: 1, z: 3.2918563}
+  m_Center: {x: 0.009902716, y: 0, z: -0.60407186}
 --- !u!1 &2685291044182340123
 GameObject:
   m_ObjectHideFlags: 0
@@ -725,7 +725,7 @@ MonoBehaviour:
   maxSuspension: 0
   suspensionPosition: 0.5
   maxSteer: 30
-  minPossibleSpeed: 20
+  minPossibleSpeed: 40
   maxPossibleSpeed: 90
   accelerationTime: 10
   brakeTime: 3
@@ -1940,8 +1940,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.9596028, y: 1, z: 4.41}
-  m_Center: {x: 0.002735734, y: 0.79999995, z: 0}
+  m_Size: {x: 1.7773689, y: 1, z: 4.4793196}
+  m_Center: {x: 0.015752375, y: 0.79999995, z: 0.103979945}
 --- !u!1 &8436666775640667587
 GameObject:
   m_ObjectHideFlags: 0

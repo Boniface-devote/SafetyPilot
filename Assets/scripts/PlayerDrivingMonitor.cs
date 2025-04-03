@@ -53,6 +53,26 @@ public class DrivingMonitor : MonoBehaviour
         CheckSuddenBraking();
     }
 
+    private bool isOverspeeding = false;
+    private bool isSharpTurning = false;
+
+    IEnumerator DelayedMonitorDriving(string message, int penalty, System.Func<bool> condition)
+    {
+        if (message == "Overspeeding!") isOverspeeding = true;
+        if (message == "Sharp Turn!") isSharpTurning = true;
+
+        yield return new WaitForSeconds(3f); // Wait for 3 seconds
+
+        if (condition()) // Check if the condition is still true after the delay
+        {
+            ShowAlert(message, penalty);
+        }
+
+        if (message == "Overspeeding!") isOverspeeding = false;
+        if (message == "Sharp Turn!") isSharpTurning = false;
+    }
+
+
     void MonitorDriving()
     {
         float currentSpeed = carRigidbody.linearVelocity.magnitude * 3.6f;
@@ -60,20 +80,21 @@ public class DrivingMonitor : MonoBehaviour
 
         isDrivingSafely = true;
 
-        if (steeringAngle > sharpTurnThreshold)
+        // Delay overspeeding detection
+        if (currentSpeed > speedLimit && !isOverspeeding)
         {
-            ShowAlert("Sharp Turn!", 2);
-            isDrivingSafely = false;
+            StartCoroutine(DelayedMonitorDriving("Overspeeding!", 10, () => currentSpeed > speedLimit));
         }
 
-        if (currentSpeed > speedLimit)
+        // Delay sharp turn detection
+        if (steeringAngle > sharpTurnThreshold && !isSharpTurning)
         {
-            ShowAlert("Overspeeding!", 10);
-            isDrivingSafely = false;
+            StartCoroutine(DelayedMonitorDriving("Sharp Turn!", 2, () => steeringAngle > sharpTurnThreshold));
         }
 
         previousSpeed = currentSpeed;
     }
+
 
     void ShowAlert(string message, int penalty = 0)
     {
@@ -152,9 +173,9 @@ public class DrivingMonitor : MonoBehaviour
 
         if (collision.gameObject.CompareTag("SpeedBump"))
         {
-            if (currentSpeed > 25f)
+            if (currentSpeed > 18f)
             {
-                ShowAlert("SpeedBump Collision!", 5);
+                ShowAlert("Slow Down on Speed Bumps!", 5);
                 isDrivingSafely = false;
             }
         }
@@ -197,6 +218,16 @@ public class DrivingMonitor : MonoBehaviour
             speedLimit = other.CompareTag("UrbanZone") ? 40f : 100f;
             isOnRoad = true;
             ShowAlert(other.tag + ". Speed limit " + speedLimit + " km/h.");
+            StartCoroutine(DetectionCooldown());
+        }
+        // Detect Pothole
+        if (other.CompareTag("PotHole") && canDetect)
+        {
+            float currentSpeed = carRigidbody.linearVelocity.magnitude * 3.6f;
+            if (currentSpeed > 10f)
+            {
+                ShowAlert("Watch out! You hit a pothole!", 5);
+            }
             StartCoroutine(DetectionCooldown());
         }
     }

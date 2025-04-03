@@ -15,9 +15,9 @@ public class TriggerCollisionDetection : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("UrbanZone") && !isOnRoad && canDetect)
+        if (other.CompareTag("PotHole") && !isOnRoad && canDetect)
         {
-            Debug.Log("Wheels are touching the road.");
+            Debug.Log("Wheels are touching the PotHole.");
             isOnRoad = true; // Mark wheels as on the road
             StartCoroutine(DetectionCooldown()); // Start cooldown
         }
@@ -25,9 +25,9 @@ public class TriggerCollisionDetection : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("UrbanZone") && isOnRoad && canDetect)
+        if (other.CompareTag("PotHole") && isOnRoad && canDetect)
         {
-            Debug.Log("Wheels left the road.");
+            Debug.Log("Wheels left the PotHole.");
             isOnRoad = false; // Mark wheels as off the road
             StartCoroutine(DetectionCooldown()); // Start cooldown
         }
