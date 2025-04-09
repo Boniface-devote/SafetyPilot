@@ -11,6 +11,7 @@ TagManager:
   - HighwayZone
   - Sensor
   - PotHole
+  - Obstacle
   layers:
   - Default
   - TransparentFX

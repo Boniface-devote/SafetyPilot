@@ -39,7 +39,6 @@ public class DrivingMonitor : MonoBehaviour
 
     public AudioSource audioSource;
     public AudioClip overspeedClip;
-   // public AudioClip sharpTurnClip;
     public AudioClip bumpClip;
     public AudioClip potholeClip;
     public AudioClip accidentClip;
@@ -112,7 +111,7 @@ public class DrivingMonitor : MonoBehaviour
     }
 
 
-    void ShowAlert(string message, int penalty = 0)
+    public void ShowAlert(string message, int penalty = 0)
     {
         if (alertText != null)
         {
@@ -126,9 +125,6 @@ public class DrivingMonitor : MonoBehaviour
                 case "Overspeeding!":
                     PlaySound(overspeedClip);
                     break;
-                //case "Sharp Turn!":
-                //    PlaySound(sharpTurnClip);
-                //    break;
                 case "Sudden Braking!":
                     PlaySound(suddenBrakeClip);
                     break;
@@ -182,7 +178,7 @@ public class DrivingMonitor : MonoBehaviour
         UpdateScoreDisplay();
     }
 
-    void UpdateScoreDisplay()
+    public void UpdateScoreDisplay()
     {
         if (scoreText != null)
         {
