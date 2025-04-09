@@ -20,6 +20,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Intersection.unity
     guid: fd11a0d6871851d429f573653d394dde
+  - enabled: 1
+    path: Assets/Scenes/RoundAbout.unity
+    guid: 8d4899474a26e074aa10a1404685dab5
+  - enabled: 1
+    path: Assets/Scenes/DrivingZone.unity
+    guid: f1611b12e0d30d54dabd22baa910d521
+  - enabled: 1
+    path: Assets/Scenes/Parking.unity
+    guid: 4bb3799762187c64f8e7fcf69ba95e60
+  - enabled: 1
+    path: Assets/Scenes/Reversing.unity
+    guid: 0f661fd5d20426443a46e2444c977c58
+  - enabled: 1
+    path: Assets/Scenes/RainyWeather.unity
+    guid: ee101a8ae0bbc7a47aff99fc933dca75
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

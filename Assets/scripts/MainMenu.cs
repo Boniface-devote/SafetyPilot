@@ -25,4 +25,24 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Intersection");
     }
+    public void StartDrivingZone()
+    {
+        SceneManager.LoadScene("DrivingZone");
+    }
+    public void StartReversing()
+    {
+        SceneManager.LoadScene("Reversing");
+    }
+    public void StartParking()
+    {
+        SceneManager.LoadScene("Parking");
+    }
+    public void StartRoundAbout()
+    {
+        SceneManager.LoadScene("RoundAbout");
+    }
+    public void StartRainyWeather()
+    {
+        SceneManager.LoadScene("RainyWeather");
+    }
 }

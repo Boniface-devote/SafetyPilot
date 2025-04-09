@@ -34,7 +34,7 @@ MonoBehaviour:
   roadDefaults:
     nrOfLanes: 4
     laneWidth: 4
-    waypointDistance: 4
+    waypointDistance: 8
   roadColors:
     textColor: {r: 1, g: 1, b: 1, a: 1}
     roadColor: {r: 0, g: 1, b: 0, a: 1}
@@ -57,7 +57,7 @@ MonoBehaviour:
     - {r: 0.8760072, g: 0.93710685, b: 0.14439677, a: 1}
     - {r: 0.34509805, g: 0.34509805, b: 0.34509805, a: 1}
     - {r: 0.036390357, g: 0, b: 0.93710685, a: 1}
-    active: 00000001
+    active: 00000100
   allWaypointsSettings:
     showConnections: 0
     showOtherLanes: 0
@@ -84,8 +84,8 @@ MonoBehaviour:
       viewWaypoints: 1
       viewLaneChanges: 1
     moveTool: 1
-    maxSpeed: 50
-    globalCarList: 01000000
+    maxSpeed: 80
+    globalCarList: 000000000100000003000000
   speedEditedWaypointsSettings:
     showConnections: 0
     showOtherLanes: 0
@@ -106,7 +106,7 @@ MonoBehaviour:
     - {r: 0, g: 0, b: 0, a: 1}
     - {r: 1, g: 1, b: 1, a: 1}
     - {r: 1, g: 1, b: 1, a: 1}
-    active: 010001
+    active: 000101
   intersectionSave:
     showAll: 1
     showExit: 1

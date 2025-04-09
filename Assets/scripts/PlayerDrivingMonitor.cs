@@ -30,6 +30,22 @@ public class DrivingMonitor : MonoBehaviour
     private bool isOnRoad = false;
     private bool canDetect = true;
 
+    public float bumpForce = 300f;
+    public float speedReductionFactor = 0.5f;
+    public float cameraShakeDuration = 0.3f;
+    public float cameraShakeMagnitude = 0.1f;
+    private Vector3 originalCamPosition;
+    private Coroutine shakeCoroutine;
+
+    public AudioSource audioSource;
+    public AudioClip overspeedClip;
+   // public AudioClip sharpTurnClip;
+    public AudioClip bumpClip;
+    public AudioClip potholeClip;
+    public AudioClip accidentClip;
+    public AudioClip suddenBrakeClip;
+
+
     void Start()
     {
         mainCamera = Camera.main;
@@ -103,9 +119,34 @@ public class DrivingMonitor : MonoBehaviour
             alertText.text = message;
             alertText.gameObject.SetActive(true);
             alertTimer = alertDuration;
+
+            // Play appropriate sound
+            switch (message)
+            {
+                case "Overspeeding!":
+                    PlaySound(overspeedClip);
+                    break;
+                //case "Sharp Turn!":
+                //    PlaySound(sharpTurnClip);
+                //    break;
+                case "Sudden Braking!":
+                    PlaySound(suddenBrakeClip);
+                    break;
+                case "Slow Down on Speed Bumps!":
+                    PlaySound(bumpClip);
+                    break;
+                case "Watch out! You hit a pothole!":
+                    PlaySound(potholeClip);
+                    break;
+                case "Accident!":
+                    PlaySound(accidentClip);
+                    break;
+            }
+
             if (penalty > 0) ReduceScore(penalty);
         }
     }
+
 
     void HandleAlertDisplay()
     {
@@ -177,6 +218,7 @@ public class DrivingMonitor : MonoBehaviour
             {
                 ShowAlert("Slow Down on Speed Bumps!", 5);
                 isDrivingSafely = false;
+                ReactToBump(); // Apply force, slow down, shake camera
             }
         }
         else
@@ -227,6 +269,7 @@ public class DrivingMonitor : MonoBehaviour
             if (currentSpeed > 10f)
             {
                 ShowAlert("Watch out! You hit a pothole!", 5);
+                ReactToBump(); // Apply force, slow down, shake camera
             }
             StartCoroutine(DetectionCooldown());
         }
@@ -242,4 +285,45 @@ public class DrivingMonitor : MonoBehaviour
             StartCoroutine(DetectionCooldown());
         }
     }
+    IEnumerator CameraShake()
+    {
+        if (mainCamera == null) yield break;
+
+        originalCamPosition = mainCamera.transform.localPosition;
+
+        float elapsed = 0f;
+        while (elapsed < cameraShakeDuration)
+        {
+            float x = Random.Range(-1f, 1f) * cameraShakeMagnitude;
+            float y = Random.Range(-1f, 1f) * cameraShakeMagnitude;
+
+            mainCamera.transform.localPosition = originalCamPosition + new Vector3(x, y, 0);
+
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        mainCamera.transform.localPosition = originalCamPosition;
+    }
+    void ReactToBump()
+    {
+        // Add upward force for a jump effect
+        carRigidbody.AddForce(Vector3.up * bumpForce);
+
+        // Reduce speed (simulate loss of control)
+        carRigidbody.linearVelocity *= speedReductionFactor;
+
+        // Trigger camera shake
+        if (shakeCoroutine != null)
+            StopCoroutine(shakeCoroutine);
+        shakeCoroutine = StartCoroutine(CameraShake());
+    }
+    void PlaySound(AudioClip clip)
+    {
+        if (audioSource != null && clip != null)
+        {
+            audioSource.PlayOneShot(clip);
+        }
+    }
+
 }
