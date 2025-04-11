@@ -29,7 +29,7 @@ public class ParkingManager : MonoBehaviour
 
     void Start()
     {
-        instructionText.text = "Park in the Bay first!";
+        instructionText.text = "Park in between the black cars first!";
         resultText.text = "";
         remainingTime = stageTimeLimit; // Set the remaining time to the time limit
 
@@ -37,6 +37,9 @@ public class ParkingManager : MonoBehaviour
         {
             drivingMonitor = Object.FindFirstObjectByType<DrivingMonitor>();
         }
+
+        // Set initial color for the timer text
+        UpdateTimerTextColor();
     }
 
     void Update()
@@ -64,6 +67,8 @@ public class ParkingManager : MonoBehaviour
         if (timerText != null)
         {
             timerText.text = "Time Left: " + Mathf.Max(0, Mathf.FloorToInt(remainingTime)) + "s";
+            // Update the color based on the remaining time
+            UpdateTimerTextColor();
         }
 
         if (!bayParked)
@@ -72,7 +77,7 @@ public class ParkingManager : MonoBehaviour
             {
                 bayParked = true;
                 ShowResult("Well done! You parked in the bay!");
-                instructionText.text = "Next: Go to the Parallel Parking Zone!";
+                instructionText.text = "Next: Go to the Parallel Parked cars Zone!";
                 if (drivingMonitor != null)
                 {
                     drivingMonitor.ShowAlert("Bay Parking Complete!");
@@ -142,6 +147,16 @@ public class ParkingManager : MonoBehaviour
     {
         resultText.text = message;
         resultTimer = resultDisplayTime;
+
+        // Set the result text color based on the message
+        if (message.Contains("Well done") || message.Contains("Stage Completed"))
+        {
+            resultText.color = Color.green;  // Success (green)
+        }
+        else
+        {
+            resultText.color = Color.red;  // Failure (red)
+        }
     }
 
     void CheckStageCompletion()
@@ -149,7 +164,7 @@ public class ParkingManager : MonoBehaviour
         // Check if the stage was completed within the time limit and with the required score
         if (drivingMonitor != null)
         {
-            if (remainingTime > 0 && drivingMonitor.playerScore >= 110)
+            if (remainingTime > 0 && drivingMonitor.playerScore >= 70)
             {
                 resultText.text = "Stage Completed!";
                 drivingMonitor.ShowAlert("Stage Completed!");
@@ -163,10 +178,28 @@ public class ParkingManager : MonoBehaviour
             }
         }
     }
+
     // Coroutine to handle the delay and scene loading
     IEnumerator LoadNextSceneAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);  // Wait for the specified delay
         SceneManager.LoadScene("SampleScene");   // Load the next scene
+    }
+
+    // Function to update the color of the timer text based on remaining time
+    void UpdateTimerTextColor()
+    {
+        if (remainingTime <= 10f)
+        {
+            timerText.color = Color.red; // Red when time is low
+        }
+        else if (remainingTime <= stageTimeLimit * 0.25f)
+        {
+            timerText.color = new Color(1f, 0.5f, 0f); // Orange when time is getting low
+        }
+        else
+        {
+            timerText.color = Color.green; // Green when time is still good
+        }
     }
 }

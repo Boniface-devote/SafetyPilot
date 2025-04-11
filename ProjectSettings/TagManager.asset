@@ -12,6 +12,11 @@ TagManager:
   - Sensor
   - PotHole
   - Obstacle
+  - RoundAbout
+  - RoundaboutEntry
+  - reversingZone
+  - ReversingZone1
+  - ReversingZone2
   layers:
   - Default
   - TransparentFX
@@ -29,7 +34,7 @@ TagManager:
   - HighwayZone
   - Sensor
   - PotHole
-  - 
+  - RoundaboutEntry
   - 
   - 
   - 

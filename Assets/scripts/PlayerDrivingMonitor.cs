@@ -2,6 +2,8 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement; // Add this at the top if it's not already there
+
 
 public class DrivingMonitor : MonoBehaviour
 {
@@ -188,6 +190,14 @@ public class DrivingMonitor : MonoBehaviour
 
     void RewardSafeDriving()
     {
+        string currentScene = SceneManager.GetActiveScene().name;
+
+        // Skip safe driving score in Parking, Reversing, or Roundabout scenes
+        if (currentScene == "Parking" || currentScene == "Reversing" || currentScene == "Roundabout")
+        {
+            return;
+        }
+
         if (isDrivingSafely)
         {
             safeDrivingTimer += Time.deltaTime;
@@ -203,6 +213,7 @@ public class DrivingMonitor : MonoBehaviour
             safeDrivingTimer = 0f;
         }
     }
+
 
     void OnCollisionEnter(Collision collision)
     {
