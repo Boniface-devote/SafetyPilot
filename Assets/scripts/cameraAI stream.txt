@@ -1,63 +1,35 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.Networking;
-using UnityEngine.UI;
 using System.Text;
 using Newtonsoft.Json.Linq;
-using TMPro;
 
-public class CameraAIButton : MonoBehaviour
+public class CameraAIStream : MonoBehaviour
 {
     public Camera playerCamera;
-    public Button analyzeButton;
-    public TMP_Text aiResponseText; // ✅ UI Text to show AI response
     private Texture2D screenshot;
-
+    private bool isRunning = true;
     private const string API_KEY = "AIzaSyCHb8yYrpc9tmKGe36JBp2ys02zpXeQrFU";
     private const string AI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent?key=" + API_KEY;
-
-    private float startTime;
 
     void Start()
     {
         if (playerCamera == null)
         {
             Debug.LogError("Player camera not assigned!");
+            return;
         }
-
-        if (analyzeButton != null)
-        {
-            analyzeButton.onClick.AddListener(OnAnalyzeButtonClicked);
-        }
-        else
-        {
-            Debug.LogError("Analyze button not assigned!");
-        }
-
-        if (aiResponseText != null)
-        {
-            aiResponseText.text = "";
-        }
-        else
-        {
-            Debug.LogError("AI Response Text UI not assigned!");
-        }
+        StartCoroutine(CaptureAndSendRoutine());
     }
 
-    void OnAnalyzeButtonClicked()
+    IEnumerator CaptureAndSendRoutine()
     {
-        StartCoroutine(CaptureAndSend());
-    }
-
-    IEnumerator CaptureAndSend()
-    {
-        analyzeButton.GetComponent<Image>().color = Color.green;
-        startTime = Time.time;
-
-        yield return StartCoroutine(CaptureFrame());
-        yield return StartCoroutine(SendToAI());
-
-        analyzeButton.GetComponent<Image>().color = Color.white;
+        while (isRunning)
+        {
+            yield return new WaitForSeconds(3f);
+            yield return StartCoroutine(CaptureFrame());
+            yield return StartCoroutine(SendToAI());
+        }
     }
 
     IEnumerator CaptureFrame()
@@ -93,25 +65,15 @@ public class CameraAIButton : MonoBehaviour
 
             yield return request.SendWebRequest();
 
-            float responseTime = Time.time - startTime;
-            Debug.Log($"AI Response Time: {responseTime} seconds");
-
             if (request.result == UnityWebRequest.Result.Success)
             {
                 string jsonResponse = request.downloadHandler.text;
                 string aiText = ExtractAIResponse(jsonResponse);
                 Debug.Log("AI Response: " + aiText);
-
-                if (aiResponseText != null)
-                {
-                    aiResponseText.text += "\n\n" + aiText; // ✅ Append instead of overwrite
-                }
             }
             else
             {
                 Debug.LogError("Error: " + request.error);
-                if (aiResponseText != null)
-                    aiResponseText.text = "Failed to get AI response.";
             }
         }
     }
@@ -127,5 +89,11 @@ public class CameraAIButton : MonoBehaviour
         {
             return "No valid response from AI.";
         }
+    }
+
+    public void StopAnalysis()
+    {
+        isRunning = false;
+        Debug.Log("Analysis Stopped.");
     }
 }

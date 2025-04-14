@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "D:\\Projects\\SafetyPilot\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|d:\\projects\\safetypilot\\assets\\gleyplugins\\trafficsystem\\example\\playercar\\playercar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|d:\\projects\\safetypilot\\assets\\scripts\\cameraaistream.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameraaistream.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|D:\\Projects\\SafetyPilot\\assets\\scripts\\chatuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\chatuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|D:\\Projects\\SafetyPilot\\assets\\gleyplugins\\trafficsystem\\example\\playercar\\playercar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\gleyplugins\\trafficsystem\\example\\playercar\\playercar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|D:\\Projects\\SafetyPilot\\assets\\scripts\\bayparkingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bayparkingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|D:\\Projects\\SafetyPilot\\assets\\scripts\\roundaboutmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|D:\\Projects\\SafetyPilot\\assets\\scripts\\reversingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\reversingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|D:\\Projects\\SafetyPilot\\assets\\scripts\\bayparkingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bayparkingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,32 +38,56 @@
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChatUIManager.cs",
+              "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\ChatUIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\ChatUIManager.cs",
+              "ToolTip": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\ChatUIManager.cs",
+              "RelativeToolTip": "Assets\\scripts\\ChatUIManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAUwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T08:06:29.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CameraAIStream.cs",
+              "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\CameraAIStream.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\CameraAIStream.cs",
+              "ToolTip": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\CameraAIStream.cs",
+              "RelativeToolTip": "Assets\\scripts\\CameraAIStream.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAuwGoAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T07:58:36.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "BayParkingManager.cs",
               "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\BayParkingManager.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\BayParkingManager.cs",
               "ToolTip": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\BayParkingManager.cs",
               "RelativeToolTip": "Assets\\scripts\\BayParkingManager.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAEwEsAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-11T16:34:47.315Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "PlayerCar.cs",
               "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\GleyPlugins\\TrafficSystem\\Example\\PlayerCar\\PlayerCar.cs",
               "RelativeDocumentMoniker": "Assets\\GleyPlugins\\TrafficSystem\\Example\\PlayerCar\\PlayerCar.cs",
               "ToolTip": "D:\\Projects\\SafetyPilot\\Assets\\GleyPlugins\\TrafficSystem\\Example\\PlayerCar\\PlayerCar.cs",
               "RelativeToolTip": "Assets\\GleyPlugins\\TrafficSystem\\Example\\PlayerCar\\PlayerCar.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAACwAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T16:30:53.216Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T16:30:53.216Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "RoundaboutManager.cs",
               "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\RoundaboutManager.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\RoundaboutManager.cs",
@@ -67,7 +99,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "ReversingManager.cs",
               "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\ReversingManager.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\ReversingManager.cs",

@@ -22,7 +22,7 @@ public class ParkingManager : MonoBehaviour
     private bool stageComplete = false;
     private bool hasFailed = false;
 
-    private float stageTimeLimit = 120f; // Time limit for the stage in seconds (e.g., 2 minutes)
+    public float stageTimeLimit = 120f; // Time limit for the stage in seconds (e.g., 2 minutes)
     private float remainingTime; // Track remaining time during the stage
 
     public DrivingMonitor drivingMonitor; // Reference to DrivingMonitor script

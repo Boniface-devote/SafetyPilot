@@ -1175,14 +1175,152 @@ MonoBehaviour:
       or rough section of road.
     - ' On the way, be prepared to stop completely for a traffic signal.'
     correctAnswerIndex: 2
-  - question: 
+  - question: On the way to a national park in Uganda, you see this road sign. What
+      should you be particularly cautious of as you approach the upcoming structure?
+    questionSprite: {fileID: 21300000, guid: 1cdf7ead93a607f44af139126c2a24db, type: 3}
+    answers:
+    - On the way, be particularly cautious of a wide, multi-lane bridge allowing
+      for easy overtaking.
+    - On the way, be particularly cautious of a roundabout located immediately after
+      the bridge.
+    - On the way, be particularly cautious of a steep incline leading up to the bridge.
+    - On the way, be particularly cautious of a bridge where the roadway becomes
+      narrower, potentially restricting passing or requiring careful maneuvering.
+    correctAnswerIndex: 3
+  - question: You are driving on a recently resurfaced road in Uganda and see this
+      sign. What potential hazard should you be aware of?
+    questionSprite: {fileID: 21300000, guid: 4e637685c432da9499c9f49b5df9f3f2, type: 3}
+    answers:
+    - There is a risk of loose stones or chippings being thrown up by your vehicle
+      or other traffic.
+    - The road ahead is very smooth and allows for high speeds.
+    - ' The road ahead has a sharp curve.'
+    - There is a high risk of encountering pedestrians on the road.
+    correctAnswerIndex: 0
+  - question: You are driving during a rainy season in Uganda and see this road sign.
+      What potential hazard should you be most prepared for?
+    questionSprite: {fileID: 21300000, guid: a6b8fc5607d2c3d49a19f6d31b9ce7a1, type: 3}
+    answers:
+    - The road ahead may have reduced traction, increasing the risk of skidding.
+    - The road ahead is closed due to flooding.
+    - The road ahead has a sharp curve to the left.
+    - The road ahead is very smooth and allows for high speeds.
+    correctAnswerIndex: 0
+  - question: You are driving through a mountainous area in Western Uganda and see
+      this road sign. What potential hazard should you be aware of?
+    questionSprite: {fileID: 21300000, guid: df1a2c112797d044083f8b738b360e01, type: 3}
+    answers:
+    - The road ahead is very smooth and allows for high speeds.
+    - The road ahead has a sharp curve.
+    - There is a high risk of encountering animals crossing the road.
+    - There is a risk of rocks falling onto the road or a potential landslide.
+    correctAnswerIndex: 3
+  - question: You are driving down a winding road in the hills of Fort Portal and
+      see this road sign. What should you be prepared to do?
+    questionSprite: {fileID: 21300000, guid: d33a738ab9e579a40bb52701d565de8d, type: 3}
+    answers:
+    - Prepare to accelerate as the road ahead is clear and downhill.
+    - Prepare to turn sharply to the left at the bottom of the hill.
+    - ' Prepare to stop for a traffic light at the bottom of the hill.'
+    - Prepare to engage a lower gear to control your speed and avoid brake overheating.
+    correctAnswerIndex: 3
+  - question: You are driving on a road leading up into the hills near Mbale and
+      see this road sign. What should you be prepared to do?
+    questionSprite: {fileID: 21300000, guid: ddd7155f1bd7a50439b355cd05ca1b56, type: 3}
+    answers:
+    - Prepare to accelerate to maintain speed on the uphill.
+    - Prepare to stop for a pedestrian crossing at the top of the hill.
+    - Prepare to engage a lower gear to maintain power and avoid stalling.
+    - Prepare to turn sharply to the right at the top of the hill.
+    correctAnswerIndex: 2
+  - question: On the way to a fishing village near Lake Victoria, you see this road
+      sign. What potential hazard should you be aware of as you continue driving?
+    questionSprite: {fileID: 21300000, guid: c72dbeba5f4ab9e45aed4f237a15e79a, type: 3}
+    answers:
+    - On the way, be aware of a well-protected area with secure barriers along the
+      water's edge.
+    - On the way, be aware of a sharp turn leading away from the water.
+    - On the way, be aware that the road may lead to an unfenced or unprotected edge
+      of a quay or river bank.
+    - On the way, be aware of a steep incline leading down to the water.
+    correctAnswerIndex: 2
+  - question: On the way to a rural town in Uganda, you see this road sign. What
+      potential hazard should you be prepared for as you continue driving?
+    questionSprite: {fileID: 21300000, guid: 6386b86f6287e5f45b81af7a6e9d8fa1, type: 3}
+    answers:
+    - On the way, be prepared for a smooth, elevated section of road.
+    - On the way, be prepared for a railway line crossing the road without any barriers
+      or gates.
+    - On the way, be prepared for a roundabout requiring you to yield to traffic
+      from the right.
+    - On the way, be prepared for a steep incline.
+    correctAnswerIndex: 1
+  - question: On the way to a town known for its railway history in Uganda, you see
+      this road sign. What potential hazard should you be prepared for as you continue
+      driving?
+    questionSprite: {fileID: 21300000, guid: 05d6fa67763ec594784f349ea7cb3b97, type: 3}
+    answers:
+    - On the way, be prepared for a smooth, elevated section of road.
+    - On the way, be prepared for a railway line crossing the road.
+    - On the way, be prepared for a roundabout requiring you to yield to traffic
+      from the right.
+    - On the way, be prepared for a steep incline.
+    correctAnswerIndex: 1
+  - question: When driving through a town center in Uganda and you see this road
+      sign, what should you be prepared for?
+    questionSprite: {fileID: 21300000, guid: e7b0255cbd82dc34398ab215fb560bbe, type: 3}
+    answers:
+    - When driving, be prepared for pedestrians crossing the road.
+    - When driving, be prepared for pedestrians crossing the road.
+    - When driving, be prepared for a sharp turn in the road.
+    - When driving, be prepared for a railway line crossing the road.
+    correctAnswerIndex: 0
+  - question: When driving near a school in Uganda and you see this road sign, what
+      should be your primary concern?
+    questionSprite: {fileID: 21300000, guid: dc92e51d94535bc44bd3c3eddcc0c5a0, type: 3}
+    answers:
+    - When driving, your primary concern should be the possibility of encountering
+      children walking or crossing the road.
+    - When driving, your primary concern should be the possibility of a sharp turn
+      in the road.
+    - When driving, your primary concern should be the possibility of a railway line
+      crossing the road.
+    - ' When driving, your primary concern should be the possibility of a sudden
+      steep incline.'
+    correctAnswerIndex: 0
+  - question: When driving near a school during school hours in Uganda and you see
+      this road sign, what should you be particularly attentive to?
+    questionSprite: {fileID: 21300000, guid: bbaf46feaca0de742969df0aad2d539a, type: 3}
+    answers:
+    - When driving, be particularly attentive to the possibility of a school crossing
+      patrol officer stopping traffic for children to cross.
+    - When driving, be particularly attentive to the possibility of a sharp turn
+      in the road.
+    - When driving, be particularly attentive to the possibility of a railway line
+      crossing the road.
+    - When driving, be particularly attentive to the possibility of a sudden steep
+      incline.
+    correctAnswerIndex: 0
+  - question: When driving in Arua and you see this road sign, what should you be
+      prepared for?
+    questionSprite: {fileID: 21300000, guid: 765abeb4204414f44a517b0a9337711b, type: 3}
+    answers:
+    - When driving in Arua, be prepared for a sharp turn in the road.
+    - When driving in Arua, be prepared for cyclists who may be present on the road
+      ahead.
+    - When driving in Arua, be prepared for a railway line crossing the road.
+    - When driving in Arua, be prepared for a sudden steep incline.
+    correctAnswerIndex: 1
+  - question: When driving in Mbarara, particularly in rural areas or near grazing
+      land, and you see this road sign, what should you be prepared for?
     questionSprite: {fileID: 0}
     answers:
-    - 
-    - 
-    - 
-    - 
-    correctAnswerIndex: 0
+    - When driving in Mbarara, be prepared for a sharp turn in the road.
+    - When driving in Mbarara, be prepared for the presence of cattle or other livestock
+      on or crossing the road ahead.
+    - When driving in Mbarara, be prepared for a railway line crossing the road.
+    - ' When driving in Mbarara, be prepared for a sudden steep incline.'
+    correctAnswerIndex: 1
   timePerQuestion: 20
   correctColor: {r: 0, g: 1, b: 0, a: 1}
   incorrectColor: {r: 1, g: 0, b: 0, a: 1}
