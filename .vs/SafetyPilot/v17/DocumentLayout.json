@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\Projects\\SafetyPilot\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|d:\\projects\\safetypilot\\assets\\scripts\\cameraaistream.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameraaistream.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|d:\\projects\\safetypilot\\assets\\gleyplugins\\trafficsystem\\example\\playercar\\playercar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\gleyplugins\\trafficsystem\\example\\playercar\\playercar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|D:\\Projects\\SafetyPilot\\assets\\scripts\\playerdrivingmonitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerdrivingmonitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|D:\\Projects\\SafetyPilot\\assets\\scripts\\chatuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\chatuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|D:\\Projects\\SafetyPilot\\assets\\gleyplugins\\trafficsystem\\example\\playercar\\playercar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\gleyplugins\\trafficsystem\\example\\playercar\\playercar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|D:\\Projects\\SafetyPilot\\assets\\scripts\\bayparkingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,11 +34,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "PlayerDrivingMonitor.cs",
+              "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\PlayerDrivingMonitor.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\PlayerDrivingMonitor.cs",
+              "ToolTip": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\PlayerDrivingMonitor.cs",
+              "RelativeToolTip": "Assets\\scripts\\PlayerDrivingMonitor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAP8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T06:31:58.518Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ChatUIManager.cs",
               "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\ChatUIManager.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\ChatUIManager.cs",
@@ -47,19 +59,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAUwDAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-14T08:06:29.663Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CameraAIStream.cs",
-              "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\CameraAIStream.cs",
-              "RelativeDocumentMoniker": "Assets\\scripts\\CameraAIStream.cs",
-              "ToolTip": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\CameraAIStream.cs",
-              "RelativeToolTip": "Assets\\scripts\\CameraAIStream.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAuwGoAAABcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T07:58:36.309Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -75,15 +74,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "PlayerCar.cs",
               "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\GleyPlugins\\TrafficSystem\\Example\\PlayerCar\\PlayerCar.cs",
               "RelativeDocumentMoniker": "Assets\\GleyPlugins\\TrafficSystem\\Example\\PlayerCar\\PlayerCar.cs",
               "ToolTip": "D:\\Projects\\SafetyPilot\\Assets\\GleyPlugins\\TrafficSystem\\Example\\PlayerCar\\PlayerCar.cs",
               "RelativeToolTip": "Assets\\GleyPlugins\\TrafficSystem\\Example\\PlayerCar\\PlayerCar.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAwwBcAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T16:30:53.216Z"
+              "WhenOpened": "2025-04-11T16:30:53.216Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

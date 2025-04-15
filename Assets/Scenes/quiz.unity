@@ -1313,13 +1313,125 @@ MonoBehaviour:
     correctAnswerIndex: 1
   - question: When driving in Mbarara, particularly in rural areas or near grazing
       land, and you see this road sign, what should you be prepared for?
-    questionSprite: {fileID: 0}
+    questionSprite: {fileID: 21300000, guid: 64da5fac0dbb2c543af084f1f7b4e576, type: 3}
     answers:
     - When driving in Mbarara, be prepared for a sharp turn in the road.
     - When driving in Mbarara, be prepared for the presence of cattle or other livestock
       on or crossing the road ahead.
     - When driving in Mbarara, be prepared for a railway line crossing the road.
     - ' When driving in Mbarara, be prepared for a sudden steep incline.'
+    correctAnswerIndex: 1
+  - question: You are driving in Kampala and encounter this road sign. What action
+      should you take?
+    questionSprite: {fileID: 21300000, guid: 558b465f703d0454ba5beaaf07cfded5, type: 3}
+    answers:
+    - ' Proceed straight ahead as the road is open.'
+    - Turn left or right if the way is clear.
+    - You are prohibited from entering this road or area.
+    - Proceed with caution, yielding to oncoming traffic.
+    correctAnswerIndex: 2
+  - question: You are in Kampala and see this road sign. What types of vehicles are
+      prohibited from entering this road or area?
+    questionSprite: {fileID: 21300000, guid: c3187f4d54ec2f84f89228775d179452, type: 3}
+    answers:
+    - Only motorcycles are prohibited.
+    - Only cars are prohibited.
+    - All types of motor vehicles, including motorcycles and cars, are prohibited.
+    - Only large trucks and buses are prohibited.
+    correctAnswerIndex: 2
+  - question: You are driving in Kampala and see this road sign. What does this sign
+      prohibit?
+    questionSprite: {fileID: 21300000, guid: 490b710d40404654b83125b1115a573b, type: 3}
+    answers:
+    - All types of vehicles.
+    - Only large trucks and buses.
+    - Only motorcycles.
+    - Only cars.
+    correctAnswerIndex: 3
+  - question: When driving in Kampala and you see this road sign, what type of vehicle
+      is prohibited from proceeding?
+    questionSprite: {fileID: 21300000, guid: a148076cde30a4b45b4acf042c03ce98, type: 3}
+    answers:
+    - When driving, all types of vehicles are prohibited.
+    - When driving, only cars are prohibited.
+    - When driving, only motorcycles are prohibited.
+    - When driving, goods vehicles (trucks, lorries) are prohibited.
+    correctAnswerIndex: 3
+  - question: When riding a motorcycle in Kampala and you see this road sign, what
+      does it indicate?
+    questionSprite: {fileID: 21300000, guid: 90f80a5d64a4b6d40a93441faff4dc22, type: 3}
+    answers:
+    - When riding, you are allowed to proceed with caution.
+    - When riding, only cars are prohibited from this road.
+    - When riding, you are prohibited from entering this road or area.
+    - When riding, all types of vehicles are prohibited from this road.
+    correctAnswerIndex: 2
+  - question: When riding a bicycle in Kampala and you see this road sign, what does
+      it indicate?
+    questionSprite: {fileID: 21300000, guid: 0e65aae15720e834daef7cc589dc089b, type: 3}
+    answers:
+    - When riding, you are prohibited from riding your bicycle on this road or in
+      this area.
+    - ' When riding, all types of vehicles are prohibited from this road.'
+    - When riding, only motorcycles are prohibited from this road.
+    - When riding, you are allowed to proceed with caution.
+    correctAnswerIndex: 0
+  - question: When you see this road sign in Kampala, what does it indicate for pedestrians?
+    questionSprite: {fileID: 21300000, guid: f08559518cb0fbb4a99445e0391d9d90, type: 3}
+    answers:
+    - When you see this sign, pedestrians are prohibited from walking on this road
+      or in this area.
+    - When you see this sign, all types of traffic are prohibited.
+    - When you see this sign, pedestrians are allowed to cross with caution.
+    - When you see this sign, only vehicles are prohibited from entering.
+    correctAnswerIndex: 0
+  - question: 
+    questionSprite: {fileID: 0}
+    answers:
+    - 
+    - 
+    - 
+    - 
+    correctAnswerIndex: 1
+  - question: 
+    questionSprite: {fileID: 0}
+    answers:
+    - 
+    - 
+    - 
+    - 
+    correctAnswerIndex: 1
+  - question: 
+    questionSprite: {fileID: 0}
+    answers:
+    - 
+    - 
+    - 
+    - 
+    correctAnswerIndex: 1
+  - question: 
+    questionSprite: {fileID: 0}
+    answers:
+    - 
+    - 
+    - 
+    - 
+    correctAnswerIndex: 1
+  - question: 
+    questionSprite: {fileID: 0}
+    answers:
+    - 
+    - 
+    - 
+    - 
+    correctAnswerIndex: 1
+  - question: 
+    questionSprite: {fileID: 0}
+    answers:
+    - 
+    - 
+    - 
+    - 
     correctAnswerIndex: 1
   timePerQuestion: 20
   correctColor: {r: 0, g: 1, b: 0, a: 1}

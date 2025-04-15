@@ -46,7 +46,6 @@ public class DrivingMonitor : MonoBehaviour
     public AudioClip accidentClip;
     public AudioClip suddenBrakeClip;
 
-
     void Start()
     {
         mainCamera = Camera.main;
@@ -101,12 +100,14 @@ public class DrivingMonitor : MonoBehaviour
         if (currentSpeed > speedLimit && !isOverspeeding)
         {
             StartCoroutine(DelayedMonitorDriving("Overspeeding!", 10, () => currentSpeed > speedLimit));
+          
         }
 
         // Delay sharp turn detection
         if (steeringAngle > sharpTurnThreshold && !isSharpTurning)
         {
             StartCoroutine(DelayedMonitorDriving("Sharp Turn!", 2, () => steeringAngle > sharpTurnThreshold));
+            
         }
 
         previousSpeed = currentSpeed;
@@ -226,12 +227,14 @@ public class DrivingMonitor : MonoBehaviour
                 ShowAlert("Slow Down on Speed Bumps!", 5);
                 isDrivingSafely = false;
                 ReactToBump(); // Apply force, slow down, shake camera
+                
             }
         }
         else
         {
             ShowAlert("Accident!", 10);
             isDrivingSafely = false;
+           
         }
     }
 
@@ -250,6 +253,7 @@ public class DrivingMonitor : MonoBehaviour
         if (currentSpeed > 10f)
         {
             ShowAlert("Sudden Braking!", 5);
+            
         }
     }
 
@@ -277,6 +281,7 @@ public class DrivingMonitor : MonoBehaviour
             {
                 ShowAlert("Watch out! You hit a pothole!", 5);
                 ReactToBump(); // Apply force, slow down, shake camera
+               
             }
             StartCoroutine(DetectionCooldown());
         }
@@ -332,5 +337,6 @@ public class DrivingMonitor : MonoBehaviour
             audioSource.PlayOneShot(clip);
         }
     }
+  
 
 }
