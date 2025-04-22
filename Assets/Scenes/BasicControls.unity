@@ -13972,7 +13972,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5451555663682435376, guid: 56726f7c6e5254348b86fcf28347696d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 572.9
+      value: 607
       objectReference: {fileID: 0}
     - target: {fileID: 5451555663682435376, guid: 56726f7c6e5254348b86fcf28347696d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -19824,57 +19824,57 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   steps:
   - instructionText: Tap the brakes by pressing Brake Pad or Down Arrow Key
-    instructionAudio: {fileID: 8300000, guid: e4ea45554f0587146adcea4aa8ea4544, type: 3}
+    instructionAudio: {fileID: 8300000, guid: 4dbfb18f34247324c8c8bd694e88a945, type: 3}
     expectedAction: Brake
     reward: 5
     penalty: 3
   - instructionText: Check lights and warning of the car by Pressing SpaceBar or
       Light Button
-    instructionAudio: {fileID: 8300000, guid: e4ea45554f0587146adcea4aa8ea4544, type: 3}
+    instructionAudio: {fileID: 8300000, guid: 816f3f6397ad6a7469162157c7965863, type: 3}
     expectedAction: Lights
     reward: 5
     penalty: 3
   - instructionText: Check the Sidemirrors By pressing C or Camera Button
-    instructionAudio: {fileID: 8300000, guid: e4ea45554f0587146adcea4aa8ea4544, type: 3}
+    instructionAudio: {fileID: 8300000, guid: a55663498c4ad954dbdba45876631348, type: 3}
     expectedAction: CameraChange
     reward: 5
     penalty: 3
   - instructionText: Change Gear to Drive Or Reverse Using G or Gear Button
-    instructionAudio: {fileID: 8300000, guid: e4ea45554f0587146adcea4aa8ea4544, type: 3}
+    instructionAudio: {fileID: 8300000, guid: dcd08ab0b8eb412448e71345c5cbc35a, type: 3}
     expectedAction: Gearshift
     reward: 5
     penalty: 3
   - instructionText: Disengage the Handbrake Using LeftCtrl Or HandBrake Button
-    instructionAudio: {fileID: 8300000, guid: e4ea45554f0587146adcea4aa8ea4544, type: 3}
+    instructionAudio: {fileID: 8300000, guid: 341db676cf8b04e409cdf3e4c150e1a4, type: 3}
     expectedAction: Handbrake
     reward: 5
     penalty: 3
   - instructionText: Turn on the Left Turn Signal By Pressing Q or LeftTurnSignal
       Button
-    instructionAudio: {fileID: 8300000, guid: e4ea45554f0587146adcea4aa8ea4544, type: 3}
+    instructionAudio: {fileID: 8300000, guid: 747420d52f65d13488afff6d825e2efa, type: 3}
     expectedAction: LeftTurnSignal
     reward: 5
     penalty: 3
   - instructionText: Turn on the Right Turn Signal By Pressing E or RightTurnSignal
       Button
-    instructionAudio: {fileID: 8300000, guid: e4ea45554f0587146adcea4aa8ea4544, type: 3}
+    instructionAudio: {fileID: 8300000, guid: 3c23ea91001a4d44597e2fb9119f6cc9, type: 3}
     expectedAction: RightTurnSignal
     reward: 5
     penalty: 3
   - instructionText: Turn the steering wheel left Using A or Left Arrow Key or Left
       Button
-    instructionAudio: {fileID: 8300000, guid: e4ea45554f0587146adcea4aa8ea4544, type: 3}
+    instructionAudio: {fileID: 8300000, guid: fddf956f80d2ef940be4908995a24ad2, type: 3}
     expectedAction: TurnLeft
     reward: 5
     penalty: 3
   - instructionText: Turn the steering wheel right Using D or Right Arrow Key or
       Right Button
-    instructionAudio: {fileID: 8300000, guid: e4ea45554f0587146adcea4aa8ea4544, type: 3}
+    instructionAudio: {fileID: 8300000, guid: ac6e99bf539e35c438cf3da6e1e8db3a, type: 3}
     expectedAction: TurnRight
     reward: 5
     penalty: 3
   - instructionText: Press W or Up Arrow key or Gas pedal to accelerate gently
-    instructionAudio: {fileID: 8300000, guid: e4ea45554f0587146adcea4aa8ea4544, type: 3}
+    instructionAudio: {fileID: 8300000, guid: 358fb3876ccffc946862023f9ad67ab4, type: 3}
     expectedAction: Accelerate
     reward: 5
     penalty: 3
