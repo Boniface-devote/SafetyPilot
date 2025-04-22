@@ -194,7 +194,7 @@ public class DrivingMonitor : MonoBehaviour
         string currentScene = SceneManager.GetActiveScene().name;
 
         // Skip safe driving score in Parking, Reversing, or Roundabout scenes
-        if (currentScene == "Parking" || currentScene == "Reversing" || currentScene == "Roundabout")
+        if (currentScene == "Parking" || currentScene == "Reversing" || currentScene == "BasicControls" || currentScene == "Roundabout")
         {
             return;
         }

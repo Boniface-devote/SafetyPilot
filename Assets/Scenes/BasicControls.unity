@@ -13805,8 +13805,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 712849405}
-  analyzeButton: {fileID: 0}
-  aiResponseText: {fileID: 0}
+  analyzeButton: {fileID: 1129569149}
+  aiResponseText: {fileID: 1358464314}
 --- !u!114 &1068520775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13954,6 +13954,10 @@ PrefabInstance:
       propertyPath: axleInfos.Array.data[1].steering
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5296200555451619701, guid: 56726f7c6e5254348b86fcf28347696d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5451555663682435376, guid: 56726f7c6e5254348b86fcf28347696d, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -14048,6 +14052,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5451555663682435377, guid: 56726f7c6e5254348b86fcf28347696d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1454104035}
+    - targetCorrespondingSourceObject: {fileID: 5451555663682435377, guid: 56726f7c6e5254348b86fcf28347696d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1454104043}
     - targetCorrespondingSourceObject: {fileID: 5451555663796892307, guid: 56726f7c6e5254348b86fcf28347696d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1027216111}
@@ -19803,6 +19810,78 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5451555663682435376, guid: 56726f7c6e5254348b86fcf28347696d, type: 3}
   m_PrefabInstance: {fileID: 1069072890}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1454104043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454104034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db1ee945648eabe40bcb1cc50cf9af99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  steps:
+  - instructionText: Tap the brakes by pressing Brake Pad or Down Arrow Key
+    instructionAudio: {fileID: 8300000, guid: e4ea45554f0587146adcea4aa8ea4544, type: 3}
+    expectedAction: Brake
+    reward: 5
+    penalty: 3
+  - instructionText: Check lights and warning of the car by Pressing SpaceBar or
+      Light Button
+    instructionAudio: {fileID: 8300000, guid: e4ea45554f0587146adcea4aa8ea4544, type: 3}
+    expectedAction: Lights
+    reward: 5
+    penalty: 3
+  - instructionText: Check the Sidemirrors By pressing C or Camera Button
+    instructionAudio: {fileID: 8300000, guid: e4ea45554f0587146adcea4aa8ea4544, type: 3}
+    expectedAction: CameraChange
+    reward: 5
+    penalty: 3
+  - instructionText: Change Gear to Drive Or Reverse Using G or Gear Button
+    instructionAudio: {fileID: 8300000, guid: e4ea45554f0587146adcea4aa8ea4544, type: 3}
+    expectedAction: Gearshift
+    reward: 5
+    penalty: 3
+  - instructionText: Disengage the Handbrake Using LeftCtrl Or HandBrake Button
+    instructionAudio: {fileID: 8300000, guid: e4ea45554f0587146adcea4aa8ea4544, type: 3}
+    expectedAction: Handbrake
+    reward: 5
+    penalty: 3
+  - instructionText: Turn on the Left Turn Signal By Pressing Q or LeftTurnSignal
+      Button
+    instructionAudio: {fileID: 8300000, guid: e4ea45554f0587146adcea4aa8ea4544, type: 3}
+    expectedAction: LeftTurnSignal
+    reward: 5
+    penalty: 3
+  - instructionText: Turn on the Right Turn Signal By Pressing E or RightTurnSignal
+      Button
+    instructionAudio: {fileID: 8300000, guid: e4ea45554f0587146adcea4aa8ea4544, type: 3}
+    expectedAction: RightTurnSignal
+    reward: 5
+    penalty: 3
+  - instructionText: Turn the steering wheel left Using A or Left Arrow Key or Left
+      Button
+    instructionAudio: {fileID: 8300000, guid: e4ea45554f0587146adcea4aa8ea4544, type: 3}
+    expectedAction: TurnLeft
+    reward: 5
+    penalty: 3
+  - instructionText: Turn the steering wheel right Using D or Right Arrow Key or
+      Right Button
+    instructionAudio: {fileID: 8300000, guid: e4ea45554f0587146adcea4aa8ea4544, type: 3}
+    expectedAction: TurnRight
+    reward: 5
+    penalty: 3
+  - instructionText: Press W or Up Arrow key or Gas pedal to accelerate gently
+    instructionAudio: {fileID: 8300000, guid: e4ea45554f0587146adcea4aa8ea4544, type: 3}
+    expectedAction: Accelerate
+    reward: 5
+    penalty: 3
+  audioSource: {fileID: 400640618}
+  drivingMonitor: {fileID: 1454104036}
+  timeoutDuration: 8
+  instructionUIText: {fileID: 1981688597}
 --- !u!4 &1461372514 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5740742270118751506, guid: bf37affee52912c4aa0ba443e0dfd292, type: 3}

@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "D:\\Projects\\SafetyPilot\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|D:\\Projects\\SafetyPilot\\assets\\gleyplugins\\trafficsystem\\example\\playercar\\playercar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\gleyplugins\\trafficsystem\\example\\playercar\\playercar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|D:\\Projects\\SafetyPilot\\assets\\scripts\\playerdrivingmonitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerdrivingmonitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|d:\\projects\\safetypilot\\assets\\scripts\\playerdrivingmonitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerdrivingmonitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|d:\\projects\\safetypilot\\assets\\gleyplugins\\trafficsystem\\scripts\\touse\\vehiclelightscomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\gleyplugins\\trafficsystem\\scripts\\touse\\vehiclelightscomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|D:\\Projects\\SafetyPilot\\assets\\gleyplugins\\trafficsystem\\example\\ui\\uibutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\gleyplugins\\trafficsystem\\example\\ui\\uibutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|D:\\Projects\\SafetyPilot\\assets\\gleyplugins\\trafficsystem\\example\\playercar\\playercar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\gleyplugins\\trafficsystem\\example\\playercar\\playercar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|D:\\Projects\\SafetyPilot\\assets\\scripts\\chatuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,24 +42,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "VehicleLightsComponent.cs",
+              "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\GleyPlugins\\TrafficSystem\\Scripts\\ToUse\\VehicleLightsComponent.cs",
+              "RelativeDocumentMoniker": "Assets\\GleyPlugins\\TrafficSystem\\Scripts\\ToUse\\VehicleLightsComponent.cs",
+              "ToolTip": "D:\\Projects\\SafetyPilot\\Assets\\GleyPlugins\\TrafficSystem\\Scripts\\ToUse\\VehicleLightsComponent.cs",
+              "RelativeToolTip": "Assets\\GleyPlugins\\TrafficSystem\\Scripts\\ToUse\\VehicleLightsComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T15:12:30.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UIButton.cs",
+              "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\GleyPlugins\\TrafficSystem\\Example\\UI\\UIButton.cs",
+              "RelativeDocumentMoniker": "Assets\\GleyPlugins\\TrafficSystem\\Example\\UI\\UIButton.cs",
+              "ToolTip": "D:\\Projects\\SafetyPilot\\Assets\\GleyPlugins\\TrafficSystem\\Example\\UI\\UIButton.cs",
+              "RelativeToolTip": "Assets\\GleyPlugins\\TrafficSystem\\Example\\UI\\UIButton.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T10:59:18.835Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "PlayerDrivingMonitor.cs",
               "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\PlayerDrivingMonitor.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\PlayerDrivingMonitor.cs",
               "ToolTip": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\PlayerDrivingMonitor.cs",
               "RelativeToolTip": "Assets\\scripts\\PlayerDrivingMonitor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAP8AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-15T06:31:58.518Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ChatUIManager.cs",
               "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\ChatUIManager.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\ChatUIManager.cs",
@@ -63,7 +96,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "BayParkingManager.cs",
               "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\BayParkingManager.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\BayParkingManager.cs",
@@ -75,20 +108,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "PlayerCar.cs",
               "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\GleyPlugins\\TrafficSystem\\Example\\PlayerCar\\PlayerCar.cs",
               "RelativeDocumentMoniker": "Assets\\GleyPlugins\\TrafficSystem\\Example\\PlayerCar\\PlayerCar.cs",
               "ToolTip": "D:\\Projects\\SafetyPilot\\Assets\\GleyPlugins\\TrafficSystem\\Example\\PlayerCar\\PlayerCar.cs",
               "RelativeToolTip": "Assets\\GleyPlugins\\TrafficSystem\\Example\\PlayerCar\\PlayerCar.cs",
-              "ViewState": "AgIAAH8AAAAAAAAAAAAwwBcAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAMcAAAAAAAAAAAAuwPoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T16:30:53.216Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T16:30:53.216Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "RoundaboutManager.cs",
               "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\RoundaboutManager.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\RoundaboutManager.cs",
@@ -100,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "ReversingManager.cs",
               "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\ReversingManager.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\ReversingManager.cs",

@@ -286600,6 +286600,10 @@ PrefabInstance:
       propertyPath: axleInfos.Array.data[1].steering
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5296200555451619701, guid: 56726f7c6e5254348b86fcf28347696d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5451555663682435376, guid: 56726f7c6e5254348b86fcf28347696d, type: 3}
       propertyPath: m_RootOrder
       value: 0

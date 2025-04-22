@@ -4020,8 +4020,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 953673454}
-  analyzeButton: {fileID: 0}
-  aiResponseText: {fileID: 0}
+  analyzeButton: {fileID: 1129569149}
+  aiResponseText: {fileID: 1358464314}
 --- !u!1 &151079371
 GameObject:
   m_ObjectHideFlags: 0
@@ -26635,7 +26635,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 8400000, guid: 3f6bfe1e7527872479575720ea625547, type: 2}
+  m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
@@ -65734,6 +65734,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4830278823411786557, guid: 56726f7c6e5254348b86fcf28347696d, type: 3}
       propertyPath: axleInfos.Array.data[1].steering
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5296200555451619701, guid: 56726f7c6e5254348b86fcf28347696d, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5451555663682435376, guid: 56726f7c6e5254348b86fcf28347696d, type: 3}
