@@ -79,7 +79,17 @@ After downloading:
 * Complete the driving challenge and receive real-time AI feedback
 * Review performance metrics and retry modules for improvement
 
----
+
+## Controls Summary
+
+| Action          | Desktop Key | Mobile Button |
+| --------------- | ----------- | ------------- |
+| Accelerate      | `W / ↑`     | Pedal Icon    |
+| Brake / Reverse | `S / ↓`     | Pedal Icon    |
+| Steer           | `A / D`     | Arrows        |
+| Gear Toggle     | `G`         | Gear Button   |
+| Headlights      | `Spacebar`  | Bulb Icon     |
+| AI Assist       | `P`         | Chat Icon     |
 
 
 ## Deployment
@@ -162,17 +172,6 @@ For bug reports, partnership inquiries, or academic collaborations:
 *Transforming road safety education through intelligent, immersive, and accessible technology.*
 
 
-
-## Controls Summary
-
-| Action          | Desktop Key | Mobile Button |
-| --------------- | ----------- | ------------- |
-| Accelerate      | `W / ↑`     | Pedal Icon    |
-| Brake / Reverse | `S / ↓`     | Pedal Icon    |
-| Steer           | `A / D`     | Arrows        |
-| Gear Toggle     | `G`         | Gear Button   |
-| Headlights      | `Spacebar`  | Bulb Icon     |
-| AI Assist       | `P`         | Chat Icon     |
 
 
 
