@@ -45,7 +45,7 @@ public class DrivingMonitor : MonoBehaviour
     public AudioClip potholeClip;
     public AudioClip accidentClip;
     public AudioClip suddenBrakeClip;
-
+    public DrivingMistakesTracker mistakesTracker;
     void Start()
     {
         mainCamera = Camera.main;
@@ -56,6 +56,10 @@ public class DrivingMonitor : MonoBehaviour
         if (handbrakeButton != null)
         {
             handbrakeButton.onClick.AddListener(TriggerSuddenBraking);
+        }
+        if (mistakesTracker == null)
+        {
+            Debug.LogWarning("DrivingMistakesTracker is not assigned in the Inspector!");
         }
     }
 
@@ -121,7 +125,10 @@ public class DrivingMonitor : MonoBehaviour
             alertText.text = message;
             alertText.gameObject.SetActive(true);
             alertTimer = alertDuration;
-
+            if (mistakesTracker != null)
+            {
+                mistakesTracker.TrackMistake(message);
+            }
             // Play appropriate sound
             switch (message)
             {

@@ -6,13 +6,20 @@ public class Exit : MonoBehaviour
 {
     public string sampleSceneName = "SampleScene"; // Ensure this matches your scene name
     public Button exitButton; // Assign the UI Button in the Inspector
-
+    public GameObject resultsPanel; // Assign the results panel GameObject in the Inspector
+    public GameObject uiPanel;
     void Start()
     {
         // Attach button click event if a button is assigned
         if (exitButton != null)
         {
             exitButton.onClick.AddListener(LoadSampleScene);
+        }
+
+        // Ensure results panel is initially inactive
+        if (resultsPanel != null)
+        {
+            resultsPanel.SetActive(false);
         }
     }
 
@@ -21,8 +28,29 @@ public class Exit : MonoBehaviour
         // Check if the Escape key is pressed
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            LoadSampleScene();
+            if (resultsPanel != null)
+            {
+                StartCoroutine(ShowResultsAndLoadScene());
+            }
+            else
+            {
+                Debug.LogWarning("Results panel not assigned! Loading scene directly.");
+                LoadSampleScene();
+            }
         }
+    }
+
+    private System.Collections.IEnumerator ShowResultsAndLoadScene()
+    {
+        // Activate the results panel
+        resultsPanel.SetActive(true);
+        uiPanel.SetActive(false);
+
+        // Wait for 30 seconds
+        yield return new WaitForSeconds(30f);
+
+        // Load the scene
+        LoadSampleScene();
     }
 
     public void LoadSampleScene()
