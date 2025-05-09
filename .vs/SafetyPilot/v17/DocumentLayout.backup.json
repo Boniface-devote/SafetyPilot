@@ -3,40 +3,28 @@
   "WorkspaceRootPath": "D:\\Projects\\SafetyPilot\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|d:\\projects\\safetypilot\\assets\\scripts\\playerdrivingmonitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerdrivingmonitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|d:\\projects\\safetypilot\\assets\\scripts\\exit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\exit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|D:\\Projects\\SafetyPilot\\assets\\scripts\\registrationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\registrationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|D:\\Projects\\SafetyPilot\\assets\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|D:\\Projects\\SafetyPilot\\assets\\gleyplugins\\trafficsystem\\example\\playercar\\playercar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\gleyplugins\\trafficsystem\\example\\playercar\\playercar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|D:\\Projects\\SafetyPilot\\assets\\scripts\\basiccontrolsguide.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\basiccontrolsguide.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|d:\\projects\\safetypilot\\assets\\scripts\\playerdrivingmonitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerdrivingmonitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|D:\\Projects\\SafetyPilot\\assets\\scripts\\chatuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\chatuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|d:\\projects\\safetypilot\\assets\\scripts\\drivingmistaketracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\drivingmistaketracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|D:\\Projects\\SafetyPilot\\assets\\scripts\\bayparkingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bayparkingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|D:\\Projects\\SafetyPilot\\assets\\scripts\\roundaboutmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\roundaboutmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|D:\\Projects\\SafetyPilot\\assets\\scripts\\reversingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\reversingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|D:\\Projects\\SafetyPilot\\assets\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,8 +34,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Exit.cs",
+              "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\Exit.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\Exit.cs",
+              "ToolTip": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\Exit.cs",
+              "RelativeToolTip": "Assets\\scripts\\Exit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T10:06:59.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DrivingMistakeTracker.cs",
+              "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\DrivingMistakeTracker.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\DrivingMistakeTracker.cs",
+              "ToolTip": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\DrivingMistakeTracker.cs",
+              "RelativeToolTip": "Assets\\scripts\\DrivingMistakeTracker.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAuwBEAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T09:32:26.205Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -58,11 +72,12 @@
               "RelativeToolTip": "Assets\\scripts\\RegistrationManager.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAQwDAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T07:35:02.048Z"
+              "WhenOpened": "2025-05-08T07:35:02.048Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "MainMenu.cs",
               "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\MainMenu.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\MainMenu.cs",
@@ -70,92 +85,34 @@
               "RelativeToolTip": "Assets\\scripts\\MainMenu.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T07:28:20.754Z"
+              "WhenOpened": "2025-05-08T07:28:20.754Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BasicControlsGuide.cs",
-              "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\BasicControlsGuide.cs",
-              "RelativeDocumentMoniker": "Assets\\scripts\\BasicControlsGuide.cs",
-              "ToolTip": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\BasicControlsGuide.cs",
-              "RelativeToolTip": "Assets\\scripts\\BasicControlsGuide.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAALUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T06:28:58.548Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "PlayerDrivingMonitor.cs",
               "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\PlayerDrivingMonitor.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\PlayerDrivingMonitor.cs",
               "ToolTip": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\PlayerDrivingMonitor.cs",
               "RelativeToolTip": "Assets\\scripts\\PlayerDrivingMonitor.cs",
-              "ViewState": "AgIAADMBAAAAAAAAAAAcwFYBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAMYAAAAAAAAAAIAywNcAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-15T06:31:58.518Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ChatUIManager.cs",
-              "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\ChatUIManager.cs",
-              "RelativeDocumentMoniker": "Assets\\scripts\\ChatUIManager.cs",
-              "ToolTip": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\ChatUIManager.cs",
-              "RelativeToolTip": "Assets\\scripts\\ChatUIManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAUwDAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T08:06:29.663Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BayParkingManager.cs",
-              "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\BayParkingManager.cs",
-              "RelativeDocumentMoniker": "Assets\\scripts\\BayParkingManager.cs",
-              "ToolTip": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\BayParkingManager.cs",
-              "RelativeToolTip": "Assets\\scripts\\BayParkingManager.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T16:34:47.315Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "PlayerCar.cs",
               "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\GleyPlugins\\TrafficSystem\\Example\\PlayerCar\\PlayerCar.cs",
               "RelativeDocumentMoniker": "Assets\\GleyPlugins\\TrafficSystem\\Example\\PlayerCar\\PlayerCar.cs",
               "ToolTip": "D:\\Projects\\SafetyPilot\\Assets\\GleyPlugins\\TrafficSystem\\Example\\PlayerCar\\PlayerCar.cs",
               "RelativeToolTip": "Assets\\GleyPlugins\\TrafficSystem\\Example\\PlayerCar\\PlayerCar.cs",
-              "ViewState": "AgIAAM8AAAAAAAAAAAAwwPoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAD4vzoAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T16:30:53.216Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RoundaboutManager.cs",
-              "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\RoundaboutManager.cs",
-              "RelativeDocumentMoniker": "Assets\\scripts\\RoundaboutManager.cs",
-              "ToolTip": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\RoundaboutManager.cs",
-              "RelativeToolTip": "Assets\\scripts\\RoundaboutManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T16:29:56.579Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ReversingManager.cs",
-              "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\ReversingManager.cs",
-              "RelativeDocumentMoniker": "Assets\\scripts\\ReversingManager.cs",
-              "ToolTip": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\ReversingManager.cs",
-              "RelativeToolTip": "Assets\\scripts\\ReversingManager.cs",
-              "ViewState": "AgIAAIEAAAAAAAAAAAAqwK0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T16:29:52.945Z"
+              "WhenOpened": "2025-04-11T16:30:53.216Z",
+              "EditorCaption": ""
             }
           ]
         }
