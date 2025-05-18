@@ -15,6 +15,7 @@ public class DisplayUsername : MonoBehaviour
 
         // Retrieve the stored username from PlayerPrefs
         string userName = PlayerPrefs.GetString("UserName", "Guest");
+        FindObjectOfType<SupabaseManager>().RegisterUserOnline(userName);
 
         // Display the username on the UI Text element
         usernameText.text = "Welcome, " + userName + "!";

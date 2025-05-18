@@ -6,14 +6,22 @@ public class Exit : MonoBehaviour
 {
     public string sampleSceneName = "SampleScene"; // Ensure this matches your scene name
     public Button exitButton; // Assign the UI Button in the Inspector
+    public Button closeButton; // New: Close button for mobile UI
     public GameObject resultsPanel; // Assign the results panel GameObject in the Inspector
-    public GameObject uiPanel;
+    public GameObject uiPanel; // Assign the main UI panel
+
     void Start()
     {
         // Attach button click event if a button is assigned
         if (exitButton != null)
         {
             exitButton.onClick.AddListener(LoadSampleScene);
+        }
+
+        // Attach the close button to the same behavior as Escape key
+        if (closeButton != null)
+        {
+            closeButton.onClick.AddListener(OnClosePressed);
         }
 
         // Ensure results panel is initially inactive
@@ -28,15 +36,20 @@ public class Exit : MonoBehaviour
         // Check if the Escape key is pressed
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (resultsPanel != null)
-            {
-                StartCoroutine(ShowResultsAndLoadScene());
-            }
-            else
-            {
-                Debug.LogWarning("Results panel not assigned! Loading scene directly.");
-                LoadSampleScene();
-            }
+            OnClosePressed();
+        }
+    }
+
+    public void OnClosePressed()
+    {
+        if (resultsPanel != null)
+        {
+            StartCoroutine(ShowResultsAndLoadScene());
+        }
+        else
+        {
+            Debug.LogWarning("Results panel not assigned! Loading scene directly.");
+            LoadSampleScene();
         }
     }
 
@@ -44,7 +57,7 @@ public class Exit : MonoBehaviour
     {
         // Activate the results panel
         resultsPanel.SetActive(true);
-        uiPanel.SetActive(false);
+        if (uiPanel != null) uiPanel.SetActive(false);
 
         // Wait for 30 seconds
         yield return new WaitForSeconds(30f);
@@ -55,15 +68,8 @@ public class Exit : MonoBehaviour
 
     public void LoadSampleScene()
     {
-        // Ensure the scene exists before loading
-        if (SceneManager.GetSceneByName(sampleSceneName) != null)
-        {
-            SceneManager.LoadScene(sampleSceneName);
-            Debug.Log("Switching to Sample Scene...");
-        }
-        else
-        {
-            Debug.LogError("Scene not found! Make sure it's added in Build Settings.");
-        }
+        // Load the scene
+        SceneManager.LoadScene(sampleSceneName);
+        Debug.Log("Switching to Sample Scene...");
     }
 }

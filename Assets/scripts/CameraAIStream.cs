@@ -111,7 +111,7 @@ public class CameraAIButton : MonoBehaviour
             {
                 Debug.LogError("Error: " + request.error);
                 if (aiResponseText != null)
-                    aiResponseText.text = "Failed to get AI response.";
+                    aiResponseText.text = "Failed to get AI response. Check your internet connection and try again later";
             }
         }
     }

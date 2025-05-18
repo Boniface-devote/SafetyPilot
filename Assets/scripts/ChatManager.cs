@@ -65,7 +65,7 @@ public class ChatManager : MonoBehaviour
         else
         {
             // Handle any errors
-            DisplayMessage("Error", "Failed to connect to AI service.");
+            DisplayMessage("Error", "Failed to connect to AI service. Check your internet connection and try again later");
             Debug.LogError(request.error);
         }
     }

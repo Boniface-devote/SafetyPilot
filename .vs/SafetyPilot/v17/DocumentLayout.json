@@ -3,28 +3,36 @@
   "WorkspaceRootPath": "D:\\Projects\\SafetyPilot\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|D:\\Projects\\SafetyPilot\\assets\\scripts\\drivingmistaketracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\drivingmistaketracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|d:\\projects\\safetypilot\\assets\\scripts\\exit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\exit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|d:\\projects\\safetypilot\\assets\\scripts\\drivingmistaketracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\drivingmistaketracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|D:\\Projects\\SafetyPilot\\assets\\scripts\\supabaseusernamestorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\supabaseusernamestorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|d:\\projects\\safetypilot\\assets\\scripts\\cameraaistream.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameraaistream.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|d:\\projects\\safetypilot\\assets\\scripts\\airequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\airequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|d:\\projects\\safetypilot\\assets\\scripts\\chatmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\chatmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|D:\\Projects\\SafetyPilot\\assets\\scripts\\displayusername.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\displayusername.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|D:\\Projects\\SafetyPilot\\assets\\scripts\\registrationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\registrationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|D:\\Projects\\SafetyPilot\\assets\\scripts\\cameraaistream.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameraaistream.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|D:\\Projects\\SafetyPilot\\assets\\scripts\\airequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\airequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|D:\\Projects\\SafetyPilot\\assets\\scripts\\chatmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\chatmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9D1E9678-09A2-E950-6F0A-552B4DD4C377}|Assembly-CSharp.csproj|D:\\Projects\\SafetyPilot\\assets\\gleyplugins\\trafficsystem\\example\\playercar\\playercar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,24 +54,48 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "SupabaseUsernameStorage.cs",
+              "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\SupabaseUsernameStorage.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\SupabaseUsernameStorage.cs",
+              "ToolTip": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\SupabaseUsernameStorage.cs",
+              "RelativeToolTip": "Assets\\scripts\\SupabaseUsernameStorage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:10:41.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DisplayUsername.cs",
+              "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\DisplayUsername.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\DisplayUsername.cs",
+              "ToolTip": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\DisplayUsername.cs",
+              "RelativeToolTip": "Assets\\scripts\\DisplayUsername.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T09:44:12.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "DrivingMistakeTracker.cs",
               "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\DrivingMistakeTracker.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\DrivingMistakeTracker.cs",
               "ToolTip": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\DrivingMistakeTracker.cs",
               "RelativeToolTip": "Assets\\scripts\\DrivingMistakeTracker.cs",
-              "ViewState": "AgIAAJQAAAAAAAAAAADwv7UAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAIwB4AAAD5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-08T12:34:16.037Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "CameraAIStream.cs",
               "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\CameraAIStream.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\CameraAIStream.cs",
@@ -71,12 +103,11 @@
               "RelativeToolTip": "Assets\\scripts\\CameraAIStream.cs",
               "ViewState": "AgIAAGIAAAAAAAAAAAAwwIMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T12:14:35.796Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T12:14:35.796Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "AIRequest.cs",
               "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\AIRequest.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\AIRequest.cs",
@@ -84,12 +115,11 @@
               "RelativeToolTip": "Assets\\scripts\\AIRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T12:14:14.776Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T12:14:14.776Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "ChatManager.cs",
               "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\ChatManager.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\ChatManager.cs",
@@ -97,37 +127,36 @@
               "RelativeToolTip": "Assets\\scripts\\ChatManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T12:13:56.029Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T12:13:56.029Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Exit.cs",
               "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\Exit.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\Exit.cs",
               "ToolTip": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\Exit.cs",
               "RelativeToolTip": "Assets\\scripts\\Exit.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAYwDIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwCYAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-08T10:06:59.662Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "RegistrationManager.cs",
               "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\RegistrationManager.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\RegistrationManager.cs",
               "ToolTip": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\RegistrationManager.cs",
               "RelativeToolTip": "Assets\\scripts\\RegistrationManager.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwDAAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwC4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-08T07:35:02.048Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "MainMenu.cs",
               "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\MainMenu.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\MainMenu.cs",
@@ -139,7 +168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "PlayerDrivingMonitor.cs",
               "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\scripts\\PlayerDrivingMonitor.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\PlayerDrivingMonitor.cs",
@@ -151,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "PlayerCar.cs",
               "DocumentMoniker": "D:\\Projects\\SafetyPilot\\Assets\\GleyPlugins\\TrafficSystem\\Example\\PlayerCar\\PlayerCar.cs",
               "RelativeDocumentMoniker": "Assets\\GleyPlugins\\TrafficSystem\\Example\\PlayerCar\\PlayerCar.cs",
