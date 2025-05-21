@@ -10,6 +10,8 @@ public class Exit : MonoBehaviour
     public GameObject resultsPanel; // Assign the results panel GameObject in the Inspector
     public GameObject uiPanel; // Assign the main UI panel
 
+    private bool isFirstEscapePressed = false; // Tracks the first escape press
+
     void Start()
     {
         // Attach button click event if a button is assigned
@@ -36,7 +38,15 @@ public class Exit : MonoBehaviour
         // Check if the Escape key is pressed
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            OnClosePressed();
+            if (!isFirstEscapePressed)
+            {
+                isFirstEscapePressed = true;
+                OnClosePressed();
+            }
+            else
+            {
+                LoadSampleScene();
+            }
         }
     }
 
