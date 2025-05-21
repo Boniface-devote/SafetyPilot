@@ -1417,6 +1417,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: land cruiser
       objectReference: {fileID: 0}
+    - target: {fileID: 4317718773136227266, guid: 436a70b435c93d74e9d4b0f983c528ea, type: 3}
+      propertyPath: m_TagString
+      value: SUV car
+      objectReference: {fileID: 0}
     - target: {fileID: 5225435122292038526, guid: 436a70b435c93d74e9d4b0f983c528ea, type: 3}
       propertyPath: m_Size.x
       value: 1.9104803
@@ -1520,6 +1524,10 @@ PrefabInstance:
     - target: {fileID: 7475771196500699630, guid: 436a70b435c93d74e9d4b0f983c528ea, type: 3}
       propertyPath: m_LocalPosition.z
       value: -1.916
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911679973995443578, guid: 436a70b435c93d74e9d4b0f983c528ea, type: 3}
+      propertyPath: m_TagString
+      value: SUV car
       objectReference: {fileID: 0}
     - target: {fileID: 8732507708657704989, guid: 436a70b435c93d74e9d4b0f983c528ea, type: 3}
       propertyPath: m_LocalScale.x

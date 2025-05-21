@@ -628,7 +628,7 @@ GameObject:
   - component: {fileID: 5515285911565082468}
   m_Layer: 9
   m_Name: OriginalSmallSedan
-  m_TagString: Untagged
+  m_TagString: SUV car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -749,6 +749,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blinkTime: 0.5
   frontLights: {fileID: 2954862934364415315}
+  spotlightLeft: {fileID: 0}
+  spotlightRight: {fileID: 0}
   reverseLights: {fileID: 3483069125771924017}
   rearLights: {fileID: 1164362464623205677}
   stopLights: {fileID: 6173288093737896911}

@@ -43,7 +43,9 @@ PlayerSettings:
   - logo: {fileID: 10404, guid: 0000000000000000f000000000000000, type: 0}
     duration: 2
   - logo: {fileID: 21300000, guid: 4477dba4d83d97246b7a4053771fad24, type: 3}
-    duration: 5
+    duration: 4
+  - logo: {fileID: 21300000, guid: 639a3c4f1544a7f44865c3538c866cc6, type: 3}
+    duration: 4
   m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1024

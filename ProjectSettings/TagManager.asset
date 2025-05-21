@@ -12,6 +12,13 @@ TagManager:
   - Sensor
   - PotHole
   - Obstacle
+  - Buildings
+  - bus
+  - salon car
+  - SUV car
+  - Lorry
+  - taxi
+  - boda boda
   layers:
   - Default
   - TransparentFX
